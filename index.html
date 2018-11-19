@@ -13,9 +13,55 @@
     <div>
     <h2>@axa-fr/react-toolkit</h2>
     <p>A set of independent components. Awesome library based on HTML and CSS using BEM convention with a JavaScript react.js implementation. Each components are autonomous and extensible. Pick and use only what you need!</p>
-    <a href="https://axaguildev.github.io/react-toolkit/design/1.0.0/index.html">Design System</a>
-    <a href="https://axaguildev.github.io/react-toolkit/storybook/1.0.0/index.html">React Storybook</a>
     <a href="https://github.com/AxaGuilDEv/react-toolkit">Github</a>
+    
+<script>
+    function initSelectBox() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          var tags = JSON.parse(this.responseText);
+        
+          const urlParams = new URLSearchParams(window.location.search);
+          const myParam = urlParams.get('target');
+
+          switch(myParam){
+            case "react_toolkit_storybook":
+            window.location = `https://axaguildev.github.io/react-toolkit/storybook/${tags[0].name}/index.html`
+            break;
+            case "react_toolkit_design":
+            window.location = `https://axaguildev.github.io/react-toolkit/design/${tags[0].name}/index.html`
+            break;
+            default:
+            break;
+          }
+
+        var select = document.getElementById("react-toolkit");
+        for(index in tags)
+        {
+          var element = tags[index];
+
+
+          var opt = document.createElement("li");
+          opt.innerHTML = `<span><a href="https://axaguildev.github.io/react-toolkit/design/${element.name}/index.html">Design System</a>
+    <a href="https://axaguildev.github.io/react-toolkit/storybook/${element.name}/index.html">React Storybook</a>
+     <b>[${element.name}]</b></span>`;
+          select.appendChild(opt);
+
+        }
+        }
+      };
+      xhttp.open("GET", "https://api.github.com/repos/AxaGuilDEv/react-toolkit/tags", true);
+      xhttp.send();
+    
+    }
+    initSelectBox();
+  </script>
+
+<h3>Documentations</h3>
+    <ul id="react-toolkit"></ul>  
+   
+    
 </div>
 <div>
     <h2>@axa-fr/react-oidc</h2>
