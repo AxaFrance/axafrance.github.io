@@ -1,15 +1,18 @@
-<!doctype html><html><head><meta charset="utf-8"><title>Storybook @axa-fr/react-toolkit</title><style>html, body {
+<!doctype html><html><head><meta charset="utf-8"><title>Storybook @axa-fr/react-toolkit</title><meta name="viewport" content="width=device-width,initial-scale=1"><style>html, body {
     overflow: hidden;
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
-  }</style><script>try {
+  }</style><script>/* globals window */
+  /* eslint-disable no-underscore-dangle */
+  try {
     if (window.parent !== window) {
       window.__REACT_DEVTOOLS_GLOBAL_HOOK__ = window.parent.__REACT_DEVTOOLS_GLOBAL_HOOK__;
       window.__VUE_DEVTOOLS_GLOBAL_HOOK__ = window.parent.__VUE_DEVTOOLS_GLOBAL_HOOK__;
     }
   } catch (e) {
+    // eslint-disable-next-line no-console
     console.warn('unable to connect to parent frame for connecting dev tools');
   }</script></head><body>
 <style>
@@ -19,7 +22,10 @@ header {
   padding: 1em;
   text-align: center;
 }
+#root > div {
+  position: relative !important;
+}
 </style>
 <header>@axa-fr/react-toolkit (version: 1.2.0)</header>
 <div id="root"></div>
-<script src="./sb_dll/storybook_ui_dll.js"></script><script src="runtime~main.729a62daeea60911f9f0.bundle.js"></script><script src="vendors~main.2de7870a7c40de0502a7.bundle.js"></script><script src="main.9ef6ae6bf91c1e6ab206.bundle.js"></script></body></html>
+<script src="runtime~main.6ac4c33d73ae9704bbb9.bundle.js"></script><script src="vendors~main.1c90c87e59211e242bb9.bundle.js"></script><script src="main.cf62e89ecb3662045752.bundle.js"></script></body></html>
