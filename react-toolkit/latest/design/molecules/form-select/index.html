@@ -87,6 +87,18 @@
     &lt;/div&gt;
 &lt;/div&gt;</code></pre></div></div></div></section><section class="tk-tabs__content-item js-tabs__content-item" data-id="tabs__content-item--12" role="tabpanel"><div class="tk-code__wrapper-outer"><div class="tk-code__wrapper-middle"><div class="tk-code__wrapper-inner"><div class="tk-code__icon"><svg class="tk-icon  tk-icon--copy " viewbox="0 0 36 36" width="36" height="36"><use xlink:href="#copy"></use></svg><span class="tk-code__icon-text">Copied</span></div><pre class="pre"><code class="css">@import '@axa-fr/react-toolkit-core/src/common/scss/core.scss';
 
+@mixin _set-message-type($color) {
+    .af-form__input-text {
+        border: 1px solid $color;
+        color: $color;
+    }
+
+    .af-form__select-container {
+        border: 1px solid $color;
+        color: $color;
+    }
+}
+
 .af-form {
     &amp;__select {
         position: relative;
@@ -123,15 +135,11 @@
         }
 
         &amp;--error {
-            .af-form__input-text {
-                border: 1px solid $color-red-axa;
-                color: $color-red-axa;
-            }
+            @include _set-message-type($color-red-axa);
+        }
 
-            .af-form__select-container {
-                border: 1px solid $color-red-axa;
-                color: $color-red-axa;
-            }
+        &amp;--warning {
+            @include _set-message-type($color-orange-dark);
         }
 
         .glyphicon-menu-down {
@@ -206,6 +214,18 @@
     &lt;/div&gt;
 &lt;/div&gt;</code></pre></div></div></div></section><section class="tk-tabs__content-item js-tabs__content-item" data-id="tabs__content-item--12" role="tabpanel"><div class="tk-code__wrapper-outer"><div class="tk-code__wrapper-middle"><div class="tk-code__wrapper-inner"><div class="tk-code__icon"><svg class="tk-icon  tk-icon--copy " viewbox="0 0 36 36" width="36" height="36"><use xlink:href="#copy"></use></svg><span class="tk-code__icon-text">Copied</span></div><pre class="pre"><code class="css">@import '@axa-fr/react-toolkit-core/src/common/scss/core.scss';
 
+@mixin _set-message-type($color) {
+    .af-form__input-text {
+        border: 1px solid $color;
+        color: $color;
+    }
+
+    .af-form__select-container {
+        border: 1px solid $color;
+        color: $color;
+    }
+}
+
 .af-form {
     &amp;__select {
         position: relative;
@@ -242,15 +262,11 @@
         }
 
         &amp;--error {
-            .af-form__input-text {
-                border: 1px solid $color-red-axa;
-                color: $color-red-axa;
-            }
+            @include _set-message-type($color-red-axa);
+        }
 
-            .af-form__select-container {
-                border: 1px solid $color-red-axa;
-                color: $color-red-axa;
-            }
+        &amp;--warning {
+            @include _set-message-type($color-orange-dark);
         }
 
         .glyphicon-menu-down {
@@ -325,6 +341,18 @@
     &lt;/div&gt;
 &lt;/div&gt;</code></pre></div></div></div></section><section class="tk-tabs__content-item js-tabs__content-item" data-id="tabs__content-item--12" role="tabpanel"><div class="tk-code__wrapper-outer"><div class="tk-code__wrapper-middle"><div class="tk-code__wrapper-inner"><div class="tk-code__icon"><svg class="tk-icon  tk-icon--copy " viewbox="0 0 36 36" width="36" height="36"><use xlink:href="#copy"></use></svg><span class="tk-code__icon-text">Copied</span></div><pre class="pre"><code class="css">@import '@axa-fr/react-toolkit-core/src/common/scss/core.scss';
 
+@mixin _set-message-type($color) {
+    .af-form__input-text {
+        border: 1px solid $color;
+        color: $color;
+    }
+
+    .af-form__select-container {
+        border: 1px solid $color;
+        color: $color;
+    }
+}
+
 .af-form {
     &amp;__select {
         position: relative;
@@ -361,15 +389,11 @@
         }
 
         &amp;--error {
-            .af-form__input-text {
-                border: 1px solid $color-red-axa;
-                color: $color-red-axa;
-            }
+            @include _set-message-type($color-red-axa);
+        }
 
-            .af-form__select-container {
-                border: 1px solid $color-red-axa;
-                color: $color-red-axa;
-            }
+        &amp;--warning {
+            @include _set-message-type($color-orange-dark);
         }
 
         .glyphicon-menu-down {
@@ -444,6 +468,18 @@
     &lt;/div&gt;
 &lt;/div&gt;</code></pre></div></div></div></section><section class="tk-tabs__content-item js-tabs__content-item" data-id="tabs__content-item--12" role="tabpanel"><div class="tk-code__wrapper-outer"><div class="tk-code__wrapper-middle"><div class="tk-code__wrapper-inner"><div class="tk-code__icon"><svg class="tk-icon  tk-icon--copy " viewbox="0 0 36 36" width="36" height="36"><use xlink:href="#copy"></use></svg><span class="tk-code__icon-text">Copied</span></div><pre class="pre"><code class="css">@import '@axa-fr/react-toolkit-core/src/common/scss/core.scss';
 
+@mixin _set-message-type($color) {
+    .af-form__input-text {
+        border: 1px solid $color;
+        color: $color;
+    }
+
+    .af-form__select-container {
+        border: 1px solid $color;
+        color: $color;
+    }
+}
+
 .af-form {
     &amp;__select {
         position: relative;
@@ -480,15 +516,11 @@
         }
 
         &amp;--error {
-            .af-form__input-text {
-                border: 1px solid $color-red-axa;
-                color: $color-red-axa;
-            }
+            @include _set-message-type($color-red-axa);
+        }
 
-            .af-form__select-container {
-                border: 1px solid $color-red-axa;
-                color: $color-red-axa;
-            }
+        &amp;--warning {
+            @include _set-message-type($color-orange-dark);
         }
 
         .glyphicon-menu-down {
@@ -579,6 +611,18 @@
     &lt;/div&gt;
 &lt;/div&gt;</code></pre></div></div></div></section><section class="tk-tabs__content-item js-tabs__content-item" data-id="tabs__content-item--12" role="tabpanel"><div class="tk-code__wrapper-outer"><div class="tk-code__wrapper-middle"><div class="tk-code__wrapper-inner"><div class="tk-code__icon"><svg class="tk-icon  tk-icon--copy " viewbox="0 0 36 36" width="36" height="36"><use xlink:href="#copy"></use></svg><span class="tk-code__icon-text">Copied</span></div><pre class="pre"><code class="css">@import '@axa-fr/react-toolkit-core/src/common/scss/core.scss';
 
+@mixin _set-message-type($color) {
+    .af-form__input-text {
+        border: 1px solid $color;
+        color: $color;
+    }
+
+    .af-form__select-container {
+        border: 1px solid $color;
+        color: $color;
+    }
+}
+
 .af-form {
     &amp;__select {
         position: relative;
@@ -615,15 +659,11 @@
         }
 
         &amp;--error {
-            .af-form__input-text {
-                border: 1px solid $color-red-axa;
-                color: $color-red-axa;
-            }
+            @include _set-message-type($color-red-axa);
+        }
 
-            .af-form__select-container {
-                border: 1px solid $color-red-axa;
-                color: $color-red-axa;
-            }
+        &amp;--warning {
+            @include _set-message-type($color-orange-dark);
         }
 
         .glyphicon-menu-down {
@@ -714,6 +754,18 @@
     &lt;/div&gt;
 &lt;/div&gt;</code></pre></div></div></div></section><section class="tk-tabs__content-item js-tabs__content-item" data-id="tabs__content-item--12" role="tabpanel"><div class="tk-code__wrapper-outer"><div class="tk-code__wrapper-middle"><div class="tk-code__wrapper-inner"><div class="tk-code__icon"><svg class="tk-icon  tk-icon--copy " viewbox="0 0 36 36" width="36" height="36"><use xlink:href="#copy"></use></svg><span class="tk-code__icon-text">Copied</span></div><pre class="pre"><code class="css">@import '@axa-fr/react-toolkit-core/src/common/scss/core.scss';
 
+@mixin _set-message-type($color) {
+    .af-form__input-text {
+        border: 1px solid $color;
+        color: $color;
+    }
+
+    .af-form__select-container {
+        border: 1px solid $color;
+        color: $color;
+    }
+}
+
 .af-form {
     &amp;__select {
         position: relative;
@@ -750,15 +802,11 @@
         }
 
         &amp;--error {
-            .af-form__input-text {
-                border: 1px solid $color-red-axa;
-                color: $color-red-axa;
-            }
+            @include _set-message-type($color-red-axa);
+        }
 
-            .af-form__select-container {
-                border: 1px solid $color-red-axa;
-                color: $color-red-axa;
-            }
+        &amp;--warning {
+            @include _set-message-type($color-orange-dark);
         }
 
         .glyphicon-menu-down {
@@ -849,6 +897,18 @@
     &lt;/div&gt;
 &lt;/div&gt;</code></pre></div></div></div></section><section class="tk-tabs__content-item js-tabs__content-item" data-id="tabs__content-item--12" role="tabpanel"><div class="tk-code__wrapper-outer"><div class="tk-code__wrapper-middle"><div class="tk-code__wrapper-inner"><div class="tk-code__icon"><svg class="tk-icon  tk-icon--copy " viewbox="0 0 36 36" width="36" height="36"><use xlink:href="#copy"></use></svg><span class="tk-code__icon-text">Copied</span></div><pre class="pre"><code class="css">@import '@axa-fr/react-toolkit-core/src/common/scss/core.scss';
 
+@mixin _set-message-type($color) {
+    .af-form__input-text {
+        border: 1px solid $color;
+        color: $color;
+    }
+
+    .af-form__select-container {
+        border: 1px solid $color;
+        color: $color;
+    }
+}
+
 .af-form {
     &amp;__select {
         position: relative;
@@ -885,15 +945,11 @@
         }
 
         &amp;--error {
-            .af-form__input-text {
-                border: 1px solid $color-red-axa;
-                color: $color-red-axa;
-            }
+            @include _set-message-type($color-red-axa);
+        }
 
-            .af-form__select-container {
-                border: 1px solid $color-red-axa;
-                color: $color-red-axa;
-            }
+        &amp;--warning {
+            @include _set-message-type($color-orange-dark);
         }
 
         .glyphicon-menu-down {
