@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "./static/css/main.7376b9c2.chunk.css",
+    "main.js": "./static/js/main.3ab85952.chunk.js",
+    "main.js.map": "./static/js/main.3ab85952.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.0a647f7d.js",
+    "runtime-main.js.map": "./static/js/runtime-main.0a647f7d.js.map",
+    "static/css/2.9c0ebb47.chunk.css": "./static/css/2.9c0ebb47.chunk.css",
+    "static/js/2.6f550270.chunk.js": "./static/js/2.6f550270.chunk.js",
+    "static/js/2.6f550270.chunk.js.map": "./static/js/2.6f550270.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.eb36532d0400fb003eb6b20ec060a34d.js": "./precache-manifest.eb36532d0400fb003eb6b20ec060a34d.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/2.9c0ebb47.chunk.css.map": "./static/css/2.9c0ebb47.chunk.css.map",
+    "static/css/main.7376b9c2.chunk.css.map": "./static/css/main.7376b9c2.chunk.css.map",
+    "static/js/2.6f550270.chunk.js.LICENSE.txt": "./static/js/2.6f550270.chunk.js.LICENSE.txt",
+    "static/media/icons-sprite.svg": "./static/media/icons-sprite.64d7776b.svg",
+    "static/media/af-icons.css": "./static/media/icons.b679b713.woff",
+    "static/media/logo-axa.svg": "./static/media/logo-axa.d4ae4eac.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0a647f7d.js",
+    "static/css/2.9c0ebb47.chunk.css",
+    "static/js/2.6f550270.chunk.js",
+    "static/css/main.7376b9c2.chunk.css",
+    "static/js/main.3ab85952.chunk.js"
+  ]
+}
