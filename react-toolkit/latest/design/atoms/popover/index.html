@@ -135,11 +135,18 @@
     &lt;/div&gt;
 &lt;/div&gt;</code></pre></div></div></div></section><section class="tk-tabs__content-item js-tabs__content-item" data-id="tabs__content-item--12" role="tabpanel"><div class="tk-code__wrapper-outer"><div class="tk-code__wrapper-middle"><div class="tk-code__wrapper-inner"><div class="tk-code__icon"><svg class="tk-icon  tk-icon--copy " viewbox="0 0 36 36" width="36" height="36"><use xlink:href="#copy"></use></svg><span class="tk-code__icon-text">Copied</span></div><pre class="pre"><code class="css">@import '@axa-fr/react-toolkit-core/src/common/scss/core.scss';
 
-$size-arrow: 8px;
+$size-arrow: 16px;
+$arrow-offset: -4px;
+$padding-popover: 0.5rem;
 
 .af-popover {
+    &amp;__wrapper {
+        background: inherit;
+        border: 0;
+        padding: 0;
+    }
+
     &amp;__container {
-        position: relative;
         display: inline-block;
 
         &amp;-pop {
@@ -147,7 +154,7 @@ $size-arrow: 8px;
             background: $color-azur;
             color: $white;
             border-radius: 3px;
-            padding: 0.5rem;
+            padding: $padding-popover;
             z-index: 100;
             width: 260px;
 
@@ -159,65 +166,6 @@ $size-arrow: 8px;
                     display: none;
                 }
             }
-
-            .af-popover__arrow {
-                width: 0;
-                height: 0;
-                border-style: solid;
-                position: absolute;
-            }
-
-            &amp;[data-placement^='top'] {
-                margin-bottom: $size-arrow;
-
-                .af-popover__arrow {
-                    border-width: $size-arrow $size-arrow 0 $size-arrow;
-                    border-color: $color-azur transparent transparent transparent;
-                    bottom: -$size-arrow;
-                    left: calc(50% - #{$size-arrow});
-                    margin-top: 0;
-                    margin-bottom: 0;
-                }
-            }
-
-            &amp;[data-placement^='bottom'] {
-                margin-top: $size-arrow;
-
-                .af-popover__arrow {
-                    border-width: 0 $size-arrow $size-arrow $size-arrow;
-                    border-color: transparent transparent $color-azur transparent;
-                    top: -$size-arrow;
-                    left: calc(50% - #{$size-arrow});
-                    margin-top: 0;
-                    margin-bottom: 0;
-                }
-            }
-
-            &amp;[data-placement^='right'] {
-                margin-left: $size-arrow;
-
-                .af-popover__arrow {
-                    border-width: $size-arrow $size-arrow $size-arrow 0;
-                    border-color: transparent $color-azur transparent transparent;
-                    left: -$size-arrow;
-                    top: calc(50% - #{$size-arrow});
-                    margin-left: 0;
-                    margin-right: 0;
-                }
-            }
-
-            &amp;[data-placement^='left'] {
-                margin-right: $size-arrow;
-
-                .af-popover__arrow {
-                    border-width: $size-arrow 0 $size-arrow $size-arrow;
-                    border-color: transparent transparent transparent $color-azur;
-                    right: -$size-arrow;
-                    top: calc(50% - #{$size-arrow});
-                    margin-left: 0;
-                    margin-right: 0;
-                }
-            }
         }
 
         &amp;--small {
@@ -227,6 +175,38 @@ $size-arrow: 8px;
                     height: 2rem;
                 }
             }
+        }
+
+        .af-popover__arrow {
+            width: $size-arrow;
+            height: $size-arrow;
+            position: absolute;
+            z-index: -1;
+
+            &amp;::before {
+                content: '';
+                background: $color-azur;
+                width: $size-arrow;
+                height: $size-arrow;
+                transform: rotate(45deg);
+                position: absolute;
+            }
+        }
+
+        [data-popper-placement^='top']&gt;.af-popover__arrow {
+            bottom: $arrow-offset;
+        }
+
+        [data-popper-placement^='bottom']&gt;.af-popover__arrow {
+            top: $arrow-offset;
+        }
+
+        [data-popper-placement^='right']&gt;.af-popover__arrow {
+            left: $arrow-offset;
+        }
+
+        [data-popper-placement^='left']&gt;.af-popover__arrow {
+            right: $arrow-offset;
         }
     }
 
