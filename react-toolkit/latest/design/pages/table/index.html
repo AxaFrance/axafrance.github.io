@@ -1,4 +1,919 @@
-<!DOCTYPE html><html class="tk-html tk-html--component" lang="fr" id="tk-component-html"><head><link rel="canonical" href="https://axaguildev.github.io/react-toolkit/latest/design"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0"><meta name="Content-Language" content="fr"><meta name="Subject" content="Axaguildev OpenSource Axa at Lille, France"><meta name="Copyright" content="2018 Axaguildev"><meta name="Author" content="Axaguildev"><meta name="Publisher" content="Axaguildev"><meta name="Identifier-Url" content="https://axaguildev.github.io/react-toolkit/latest/design"><meta name="Reply-To" content="samuel.gomez@axa.fr"><meta name="Revisit-After" content="15 days"><meta name="Robots" content="all"><meta name="Rating" content="general"><meta name="Distribution" content="global"><meta name="Geography" content="Lille, France, 59000"><meta name="Category" content="engineering"><meta name="DC.Title" content="Axaguildev OpenSource Axa at Lille, France"><meta name="DC.Content-Language" content="fr"><meta name="DC.Description" content="Axaguildev OpenSource Axa Front-End et Back-end, Nodejs React à Lille."><meta name="DC.Keywords" content="Axaguildev, Open Source,Open source Axa, Axa France"><meta name="DC.Subject" content="Axaguildev OpenSource Axa at Lille, France"><meta name="DC.Copyright" content="2018 Axaguildev"><meta name="DC.Author" content="Axaguildev"><meta name="DC.Publisher" content="Axaguildev"><meta name="DC.Identifier-Url" content="https://axaguildev.github.io/react-toolkit/latest/design"><meta name="DC.Reply-To" content="samuel.gomez@axa.fr"><meta property="og:image" content="https://axaguildev.github.io/react-toolkit/latest/design./assets/images/assets/images/axa.svg"><meta property="og:site_name" content="GitHub AxaGuiDev"><meta property="og:type" content="profile"><meta property="og:title" content="Axaguildev OpenSource Axa at Lille, France"><meta property="og:url" content="https://axaguildev.github.io/react-toolkit/latest/design"><meta property="og:description" content="Axaguildev OpenSource Axa Front-End et Back-end, Nodejs React à Lille."><meta property="profile:username" content="Axaguildev"><!--https://realfavicongenerator.net/--><link rel="apple-touch-icon" sizes="57x57" href="./assets/favicons/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="./assets/favicons/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="./assets/favicons/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="./assets/favicons/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="./assets/favicons/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="./assets/favicons/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="./assets/favicons/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="./assets/favicons/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon-180x180.png"><link rel="icon" type="image/png" href="./assets/favicons/favicon-32x32.png" sizes="32x32"><link rel="icon" type="image/png" href="./assets/favicons/android-chrome-192x192.png" sizes="192x192"><link rel="icon" type="image/png" href="./assets/favicons/favicon-96x96.png" sizes="96x96"><link rel="icon" type="image/png" href="./assets/favicons/favicon-16x16.png" sizes="16x16"><link rel="manifest" href="./assets/favicons/manifest.json"><link rel="mask-icon" href="./assets/favicons/safari-pinned-tab.svg" color="#5bbad5"><meta name="msapplication-TileColor" content="#da532c"><meta name="msapplication-TileImage" content="./assets/favicons/mstile-144x144.png"><meta name="theme-color" content="#ffffff"><meta name="description" content="UI Component Form for design system Axa. Toolkit Axa is the design system for Axa web and product. It is a series of individual styles, components, and guidelines used for creating unified UI."><meta name="keywords" content="Form design system, ui Form, design system axa, design system ui, design system react, design"><title>Form Component UI - Slash Design System</title><!--[if lte IE 8]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>--><link rel="shortcut icon" href="img/favicon.ico"><link href="../../bundle.css" rel="stylesheet" type="text/css"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/sunburst.min.css"><style>block style</style></head><body class="tk-body" id="tk-component-body"><div class="tk-menu  tk-menu--opened js-menu  js-menu--opened"><svg class="tk-icon  tk-icon--close js-icon  js-icon--close tk-menu__close" viewbox="0 0 36 36" width="36" height="36"><use xlink:href="#cross-gap"></use></svg><svg class="tk-icon  tk-icon--open js-icon  js-icon--open tk-menu__open" viewbox="0 0 36 36" width="36" height="36"><use xlink:href="#menu-button"></use></svg><nav class="tk-menu__nav"><ul class="tk-menu__list" role="menu"><li class="tk-menu__item"><span class="tk-menu__item-text js-menu__item-text">	Main</span><ul class="tk-menu__list tk-menu__list--child js-menu__list--child" role="menu"><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/" title="">	Home</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/get-started" title="">	Get started</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/github" title="">	Github</a></li></ul></li></ul><ul class="tk-menu__list" role="menu"><li class="tk-menu__item"><span class="tk-menu__item-text js-menu__item-text">	Pages</span><ul class="tk-menu__list tk-menu__list--child js-menu__list--child" role="menu"><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/pages/form" title="">	Page form</a></li><li class="tk-menu__item tk-menu__item--active"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/pages/table" title="">	Page table</a></li></ul></li></ul><ul class="tk-menu__list" role="menu"><li class="tk-menu__item"><span class="tk-menu__item-text js-menu__item-text">	Style</span><ul class="tk-menu__list tk-menu__list--child js-menu__list--child" role="menu"><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/style/colors" title="">	Colors</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/style/icons" title="">	Icons</a></li></ul></li></ul><ul class="tk-menu__list" role="menu"><li class="tk-menu__item"><span class="tk-menu__item-text js-menu__item-text">	Components</span><ul class="tk-menu__list tk-menu__list--child js-menu__list--child" role="menu"><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/organisms/accordion" title="">	Accordion</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/alert" title="">	Alert</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/atoms/badge" title="">	Badge</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/atoms/button" title="">	Button</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/atoms/list" title="">	List</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/atoms/loader" title="">	Loader</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/organisms/modal" title="">	Modal</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/pager" title="">	Pager</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/organisms/paging" title="">	Paging</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/organisms/panel" title="">	Panel</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/atoms/popover" title="">	Popover</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/organisms/restitution" title="">	Restitution</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/atoms/slider" title="">	Slider</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/table" title="">	Table</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/tabs" title="">	Tabs</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/atoms/title" title="">	Title</a></li></ul></li></ul><ul class="tk-menu__list" role="menu"><li class="tk-menu__item"><span class="tk-menu__item-text js-menu__item-text">	Structure</span><ul class="tk-menu__list tk-menu__list--child js-menu__list--child" role="menu"><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/title-bar" title="">	Title Bar</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/navigation" title="">	Navigation</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/organisms/header" title="">	Header</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/footer" title="">	Footer</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/organisms/footer-client" title="">	Footer client</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/atoms/drawer" title="">	Drawer</a></li></ul></li></ul><ul class="tk-menu__list" role="menu"><li class="tk-menu__item"><span class="tk-menu__item-text js-menu__item-text">	FORM ELEMENTS</span><ul class="tk-menu__list tk-menu__list--child js-menu__list--child" role="menu"><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/organisms/form" title="">	Overview</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/form-text" title="">	Input Text</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/form-select" title="">	Select</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/form-radio-switch" title="">	Radio switch</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/form-textarea" title="">	Textarea</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/form-checkbox" title="">	Checkbox</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/form-radio" title="">	Radio</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/form-file" title="">	File</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/form-pass" title="">	Pass</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/form-datepicker" title="">	Datepicker</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/organisms/form-card" title="">	Card</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/organisms/form-filter" title="">	Filter</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/organisms/form-filter-inline" title="">	Filter inline</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/steps" title="">	Steps</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/steps-new" title="">	New Steps</a></li></ul></li></ul></nav></div><header class="tk-header"><a class="tk-header__name-link" href="../../" title="Retour à l'accueil"><div class="tk-logo  tk-logo--header"><img class="tk-logo__img" src="../.././assets/images/slash-logo-white.svg" alt="Retour à l'accueil"/><div class="tk-logo__title"><h2 class="tk-title  tk-title--logo-name">Slash</h2><h3 class="tk-title  tk-title--logo-subtitle">Design System</h3></div></div></a></header><div class="tk-content tk-content--opened  js-content "><div class="tk-page"><div class="tk-page__header"><h1 class="tk-title">Page Table</h1><h2 class="tk-title">Organisms</h2></div><div class="tk-page__links"><ul class="tk-page__summary"><li class="tk-page__summary-item"><span class="tk-page__summary-link js-smooth-links" data-target="pageguidelines">Guidelines</span></li><li class="tk-page__summary-item"><span class="tk-page__summary-link js-smooth-links" data-target="pagecode">Code</span></li><li class="tk-page__summary-item"><span class="tk-page__summary-link js-smooth-links" data-target="pagestyle">Style</span></li></ul><div class="tk-header__links"><a target="_blank" href="https://axaguildev.github.io/react-toolkit/latest/storybook/?path=/story/form-demo-statefull--form-with-recompose"><img class="tk-img" src="../.././assets/images/react.svg" alt="react storybook"/></a><a target="_blank" href="https://github.com/AxaGuilDEv/react-toolkit/tree/master/packages/Form"><img class="tk-img" src="../.././assets/images/github.svg" alt="github readme"/></a><a target="_blank" href="https://badge.fury.io/js/%40axa-fr%2Freact-toolkit-form-core"><img src="https://badge.fury.io/js/%40axa-fr%2Freact-toolkit-form-core.svg" alt="npm version"/></a></div></div><div class="tk-page__content"><section id="pageguidelines"><h1 class="tk-title  tk-title--page">Generales Guidelines</h1><article class="tk-markdown"><h2>Tone of voice</h2>
+<!DOCTYPE html><html class="tk-html tk-html--component" lang="fr" id="tk-component-html"><head><link rel="canonical" href="https://axaguildev.github.io/react-toolkit/latest/design"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0"><meta name="Content-Language" content="fr"><meta name="Subject" content="Axaguildev OpenSource Axa at Lille, France"><meta name="Copyright" content="2018 Axaguildev"><meta name="Author" content="Axaguildev"><meta name="Publisher" content="Axaguildev"><meta name="Identifier-Url" content="https://axaguildev.github.io/react-toolkit/latest/design"><meta name="Reply-To" content="samuel.gomez@axa.fr"><meta name="Revisit-After" content="15 days"><meta name="Robots" content="all"><meta name="Rating" content="general"><meta name="Distribution" content="global"><meta name="Geography" content="Lille, France, 59000"><meta name="Category" content="engineering"><meta name="DC.Title" content="Axaguildev OpenSource Axa at Lille, France"><meta name="DC.Content-Language" content="fr"><meta name="DC.Description" content="Axaguildev OpenSource Axa Front-End et Back-end, Nodejs React à Lille."><meta name="DC.Keywords" content="Axaguildev, Open Source,Open source Axa, Axa France"><meta name="DC.Subject" content="Axaguildev OpenSource Axa at Lille, France"><meta name="DC.Copyright" content="2018 Axaguildev"><meta name="DC.Author" content="Axaguildev"><meta name="DC.Publisher" content="Axaguildev"><meta name="DC.Identifier-Url" content="https://axaguildev.github.io/react-toolkit/latest/design"><meta name="DC.Reply-To" content="samuel.gomez@axa.fr"><meta property="og:image" content="https://axaguildev.github.io/react-toolkit/latest/design./assets/images/assets/images/axa.svg"><meta property="og:site_name" content="GitHub AxaGuiDev"><meta property="og:type" content="profile"><meta property="og:title" content="Axaguildev OpenSource Axa at Lille, France"><meta property="og:url" content="https://axaguildev.github.io/react-toolkit/latest/design"><meta property="og:description" content="Axaguildev OpenSource Axa Front-End et Back-end, Nodejs React à Lille."><meta property="profile:username" content="Axaguildev"><!--https://realfavicongenerator.net/--><link rel="apple-touch-icon" sizes="57x57" href="./assets/favicons/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="./assets/favicons/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="./assets/favicons/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="./assets/favicons/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="./assets/favicons/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="./assets/favicons/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="./assets/favicons/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="./assets/favicons/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon-180x180.png"><link rel="icon" type="image/png" href="./assets/favicons/favicon-32x32.png" sizes="32x32"><link rel="icon" type="image/png" href="./assets/favicons/android-chrome-192x192.png" sizes="192x192"><link rel="icon" type="image/png" href="./assets/favicons/favicon-96x96.png" sizes="96x96"><link rel="icon" type="image/png" href="./assets/favicons/favicon-16x16.png" sizes="16x16"><link rel="manifest" href="./assets/favicons/manifest.json"><link rel="mask-icon" href="./assets/favicons/safari-pinned-tab.svg" color="#5bbad5"><meta name="msapplication-TileColor" content="#da532c"><meta name="msapplication-TileImage" content="./assets/favicons/mstile-144x144.png"><meta name="theme-color" content="#ffffff"><meta name="description" content="UI Component Form for design system Axa. Toolkit Axa is the design system for Axa web and product. It is a series of individual styles, components, and guidelines used for creating unified UI."><meta name="keywords" content="Form design system, ui Form, design system axa, design system ui, design system react, design"><title>Form Component UI - Slash Design System</title><!--[if lte IE 8]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>--><link rel="shortcut icon" href="img/favicon.ico"><link href="../../bundle.css" rel="stylesheet" type="text/css"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/sunburst.min.css"><style>block style</style></head><body class="tk-body" id="tk-component-body"><div class="tk-menu  tk-menu--opened js-menu  js-menu--opened"><svg class="tk-icon  tk-icon--close js-icon  js-icon--close tk-menu__close" viewbox="0 0 36 36" width="36" height="36"><use xlink:href="#cross-gap"></use></svg><svg class="tk-icon  tk-icon--open js-icon  js-icon--open tk-menu__open" viewbox="0 0 36 36" width="36" height="36"><use xlink:href="#menu-button"></use></svg><nav class="tk-menu__nav"><ul class="tk-menu__list" role="menu"><li class="tk-menu__item"><span class="tk-menu__item-text js-menu__item-text">	Main</span><ul class="tk-menu__list tk-menu__list--child js-menu__list--child" role="menu"><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/" title="">	Home</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/get-started" title="">	Get started</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/github" title="">	Github</a></li></ul></li></ul><ul class="tk-menu__list" role="menu"><li class="tk-menu__item"><span class="tk-menu__item-text js-menu__item-text">	Pages</span><ul class="tk-menu__list tk-menu__list--child js-menu__list--child" role="menu"><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/pages/form" title="">	Page form</a></li><li class="tk-menu__item tk-menu__item--active"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/pages/table" title="">	Page table</a></li></ul></li></ul><ul class="tk-menu__list" role="menu"><li class="tk-menu__item"><span class="tk-menu__item-text js-menu__item-text">	Style</span><ul class="tk-menu__list tk-menu__list--child js-menu__list--child" role="menu"><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/style/colors" title="">	Colors</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/style/icons" title="">	Icons</a></li></ul></li></ul><ul class="tk-menu__list" role="menu"><li class="tk-menu__item"><span class="tk-menu__item-text js-menu__item-text">	Components</span><ul class="tk-menu__list tk-menu__list--child js-menu__list--child" role="menu"><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/organisms/accordion" title="">	Accordion</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/alert" title="">	Alert</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/atoms/badge" title="">	Badge</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/atoms/button" title="">	Button</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/atoms/list" title="">	List</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/atoms/loader" title="">	Loader</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/organisms/modal" title="">	Modal</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/pager" title="">	Pager</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/organisms/paging" title="">	Paging</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/organisms/panel" title="">	Panel</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/atoms/popover" title="">	Popover</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/organisms/restitution" title="">	Restitution</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/atoms/slider" title="">	Slider</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/table" title="">	Table</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/tabs" title="">	Tabs</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/atoms/title" title="">	Title</a></li></ul></li></ul><ul class="tk-menu__list" role="menu"><li class="tk-menu__item"><span class="tk-menu__item-text js-menu__item-text">	Structure</span><ul class="tk-menu__list tk-menu__list--child js-menu__list--child" role="menu"><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/title-bar" title="">	Title Bar</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/navigation" title="">	Navigation</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/organisms/header" title="">	Header</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/footer" title="">	Footer</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/organisms/footer-client" title="">	Footer client</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/atoms/drawer" title="">	Drawer</a></li></ul></li></ul><ul class="tk-menu__list" role="menu"><li class="tk-menu__item"><span class="tk-menu__item-text js-menu__item-text">	FORM ELEMENTS</span><ul class="tk-menu__list tk-menu__list--child js-menu__list--child" role="menu"><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/organisms/form" title="">	Overview</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/form-text" title="">	Input Text</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/form-select" title="">	Select</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/form-radio-switch" title="">	Radio switch</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/form-textarea" title="">	Textarea</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/form-checkbox" title="">	Checkbox</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/form-radio" title="">	Radio</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/form-file" title="">	File</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/form-pass" title="">	Pass</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/form-datepicker" title="">	Datepicker</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/organisms/form-card" title="">	Card</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/organisms/form-filter" title="">	Filter</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/organisms/form-filter-inline" title="">	Filter inline</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/steps" title="">	Steps</a></li><li class="tk-menu__item"><a class="tk-menu__item-link" href="https://axaguildev.github.io/react-toolkit/latest/design/molecules/steps-new" title="">	New Steps</a></li></ul></li></ul></nav></div><header class="tk-header"><a class="tk-header__name-link" href="../../" title="Retour à l'accueil"><div class="tk-logo  tk-logo--header"><img class="tk-logo__img" src="../.././assets/images/slash-logo-white.svg" alt="Retour à l'accueil"/><div class="tk-logo__title"><h2 class="tk-title  tk-title--logo-name">Slash</h2><h3 class="tk-title  tk-title--logo-subtitle">Design System</h3></div></div></a></header><div class="tk-content tk-content--opened  js-content "><div class="tk-page"><div class="tk-page__header"><h1 class="tk-title">Page Table</h1><h2 class="tk-title">Organisms</h2></div><div class="tk-page__links"><ul class="tk-page__summary"><li class="tk-page__summary-item"><span class="tk-page__summary-link js-smooth-links" data-target="pagecode">Code</span></li><li class="tk-page__summary-item"><span class="tk-page__summary-link js-smooth-links" data-target="pageguidelines">Guidelines</span></li><li class="tk-page__summary-item"><span class="tk-page__summary-link js-smooth-links" data-target="pagestyle">Style</span></li></ul><div class="tk-header__links"><a target="_blank" href="https://axaguildev.github.io/react-toolkit/latest/storybook/?path=/story/form-demo-statefull--form-with-recompose"><img class="tk-img" src="../.././assets/images/react.svg" alt="react storybook"/></a><a target="_blank" href="https://github.com/AxaGuilDEv/react-toolkit/tree/master/packages/Form"><img class="tk-img" src="../.././assets/images/github.svg" alt="github readme"/></a><a target="_blank" href="https://badge.fury.io/js/%40axa-fr%2Freact-toolkit-form-core"><img src="https://badge.fury.io/js/%40axa-fr%2Freact-toolkit-form-core.svg" alt="npm version"/></a></div></div><div class="tk-page__content"><section id="pagecode"><h1 class="tk-title  tk-title--page">Source Code</h1><article class="tk-demo  tk-demo--pagetable js-demo  js-demo--pagetable"><h2 class="tk-title  tk-title--demo">Sample Table</h2><div class="tk-demo__display"><svg class="tk-icon  tk-icon--demo-open js-icon  js-icon--demo-open " viewbox="0 0 36 36" width="36" height="36"><use xlink:href="#full-screen"></use></svg><svg class="tk-icon  tk-icon--demo-close js-icon  js-icon--demo-close " viewbox="0 0 36 36" width="36" height="36"><use xlink:href="#cross-full"></use></svg><div class="tk-demo__template">
+<div class="af-header">
+  <div class="af-container af-header__wrapper">
+    <header class="af-header__content" role="banner">
+      <div class="af-header__name"><a class="af-logo" href="/"><img class="af-logo__brand" src="../../assets/images/slash-logo.svg" alt="Logo Slash Design System"/></a>
+        <h2 class="af-header__title">Nom de l&apos;application<small class="af-header__subtitle">Baseline</small></h2>
+      </div>
+      <div class="af-contrat">
+        <svg class="glyphicon glyphicon-info-sign" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+          <path d="M50.382 0.736c-27.365 0-49.549 22.184-49.549 49.55 0 27.364 22.184 49.547 49.549 49.547 27.365 0 49.548-22.183 49.548-49.547 0-27.366-22.183-49.55-49.548-49.55zM58.151 68.517c-3.74 5.613-7.544 9.941-13.944 9.941-4.369-0.712-6.163-3.843-5.214-7.031l8.233-27.269c0.198-0.668-0.135-1.381-0.744-1.594-0.609-0.214-1.799 0.576-2.829 1.702l-4.975 5.988c-0.136-1.003-0.014-2.667-0.014-3.337 3.74-5.612 9.88-10.044 14.046-10.044 3.962 0.407 5.833 3.571 5.144 7.050l-8.29 27.402c-0.111 0.62 0.216 1.246 0.779 1.444 0.609 0.213 1.89-0.576 2.92-1.703l4.975-5.988c0.136 1.002-0.087 2.769-0.087 3.439zM57.043 32.901c-3.149 0-5.701-2.291-5.701-5.671 0-3.378 2.552-5.669 5.701-5.669 3.148 0 5.701 2.291 5.701 5.669-0.001 3.381-2.553 5.671-5.701 5.671z"></path>
+        </svg>
+        <dl class="af-contrat__list">
+          <dt class="af-contrat__word">Client :</dt>
+          <dd class="af-contrat__def">0123456789 - NOM</dd>
+          <dt class="af-contrat__word">Portefeuille :</dt>
+          <dd class="af-contrat__def">000123456789</dd>
+          <dt class="af-contrat__word">Status :</dt>
+          <dd class="af-contrat__def">Affaire nouvelle</dd>
+        </dl>
+      </div>
+      <div class="af-info-user"><a class="af-info-user__link" href="/profile" title="Voir mon profil"><span class="af-info-user__name">Pierre Martin</span><span class="af-info-user__profile">[Profile]</span></a></div>
+    </header>
+  </div>
+</div>
+<div class="af-nav-container">
+  <button class="mask fade show" type="button"></button>
+  <nav class="af-nav af-drawer left show" role="navigation" aria-label="Menu principal">
+    <div class="af-container af-nav__wrapper">
+      <div class="af-nav__aside-header">
+        <h4 class="af-nav__aside-title">Menu</h4><a class="af-nav__aside-close" href="#" role="button" aria-haspopup="true" aria-controls="idmenu" id="menubutton">×</a>
+      </div>
+      <ul class="af-nav__list" role="menubar" aria-labelledby="menubutton" id="idmenu">
+        <li class="af-nav__item af-nav__item--active" role="none"><a class="af-nav__link" role="menuitem" href="/home" tabindex="0">Home</a>
+        </li>
+        <li class="af-nav__item" role="none"><a class="af-nav__link" role="menuitem" href="/form" tabindex="-1">Forms</a>
+        </li>
+        <li class="af-nav__item" role="none"><a class="af-nav__link" role="menuitem" href="/fileupload" tabindex="-1">Fileupload</a>
+        </li>
+        <li class="af-nav__item" role="none"><a class="af-nav__link" role="menuitem" href="/table" tabindex="-1">Table</a>
+        </li>
+        <li class="af-nav__item" role="none"><a class="af-nav__link" role="menuitem" href="/collapse" tabindex="-1">Accordions</a>
+        </li>
+        <li class="af-nav__item" role="none"><a class="af-nav__link" role="menuitem" href="/table" tabindex="-1"> Drag n drop</a>
+        </li>
+        <li class="af-nav__item" role="none"><a class="af-nav__link" role="menuitem" href="/alert" tabindex="-1">Alerts</a>
+        </li>
+        <li class="af-nav__item" role="none"><a class="af-nav__link" role="menuitem" href="/contributing" tabindex="-1">Validation</a>
+        </li>
+        <li class="af-nav__item af-nav__item--haschild" role="none"><a class="af-nav__link" role="menuitem" href="/doc" tabindex="-1" aria-haspopup="aria-haspopup" aria-expanded="aria-expanded">Doc</a>
+          <svg class="glyphicon glyphicon-arrow-xs-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <path d="M86.799 36.75h-73.299l36.654 35.636 36.645-35.636z"></path>
+          </svg>
+          <ul class="af-nav__list af-nav__list--children" role="menu" aria-label="Doc">
+            <li class="af-nav__item" role="none"><a class="af-nav__link" role="menuitem" href="/doc/sous-lien" tabindex="-1">Sous lien</a></li>
+            <li class="af-nav__item" role="none"><a class="af-nav__link" role="menuitem" href="/doc/sous-lien2" tabindex="-1">Sous lien 2</a></li>
+            <li class="af-nav__item" role="none"><a class="af-nav__link" role="menuitem" href="/doc/sous-lien3" tabindex="-1">Sous lien 3</a></li>
+            <li class="af-nav__item" role="none"><a class="af-nav__link" role="menuitem" href="/doc/sous-lien4" tabindex="-1">Sous lien 4</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<div class="af-title-bar">
+  <div class="af-title-bar__wrapper af-container">
+    <button class="af-btn-circle af-title-bar__mobile-menu">
+      <div class="af-btn__wrapper">
+        <svg class="glyphicon glyphicon-menu-hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+          <path d="M3.649,1.21h92.701c0.65,0,1.222,0.243,1.708,0.73c0.487,0.49,0.732,1.057,0.732,1.71v14.638
+	c0,0.65-0.245,1.221-0.732,1.707c-0.486,0.488-1.058,0.732-1.708,0.732H3.649c-0.653,0-1.219-0.244-1.708-0.732
+	c-0.489-0.486-0.732-1.057-0.732-1.707V3.65c0-0.653,0.243-1.22,0.732-1.71C2.431,1.453,2.996,1.21,3.649,1.21L3.649,1.21z
+	 M3.649,40.241h92.701c0.65,0,1.222,0.244,1.708,0.729c0.487,0.486,0.732,1.059,0.732,1.709v14.638c0,0.65-0.245,1.222-0.732,1.708
+	c-0.486,0.488-1.058,0.736-1.708,0.736H3.649c-0.653,0-1.219-0.248-1.708-0.736c-0.489-0.486-0.732-1.058-0.732-1.708V42.679
+	c0-0.65,0.243-1.223,0.732-1.709C2.431,40.485,2.996,40.241,3.649,40.241L3.649,40.241z M3.649,79.272h92.701
+	c0.65,0,1.222,0.241,1.708,0.731c0.487,0.49,0.732,1.058,0.732,1.712v14.638c0,0.65-0.245,1.219-0.732,1.708
+	c-0.486,0.485-1.058,0.729-1.708,0.729H3.649c-0.653,0-1.219-0.243-1.708-0.729c-0.489-0.489-0.732-1.058-0.732-1.708V81.716
+	c0-0.654,0.243-1.222,0.732-1.712S2.996,79.272,3.649,79.272L3.649,79.272z"></path>
+        </svg>
+      </div>
+    </button>
+    <h1 class="af-title-bar__title">Slash Design System<small class="af-title-bar__subtitle">Sous titre</small></h1>
+    <div class="af-title-bar__actions"><a class="af-title-bar__link" href="#lien" title="lien titlebar">lien titlebar</a><a class="af-btn--circle" href="#enregistrer" title="Enregistrer" role="button" tabindex="0">
+        <svg class="glyphicon glyphicon-floppy-disk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+          <path d="M3.125 92.5v-83.333q0-1.667 1.208-2.917t2.958-1.25h20.833v25h41.667v-25h8.333l16.667 16.667v70.833q0 1.75-1.25 2.958t-2.917 1.208h-12.5v-33.333h-58.333v33.333h-12.5q-1.75 0-2.958-1.208t-1.208-2.958zM53.125 21.667h8.333v-16.667h-8.333v16.667z"></path>
+        </svg></a><a class="af-btn--circle" href="#imprimer" title="Imprimer" role="button" tabindex="0">
+        <svg class="glyphicon glyphicon-print" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+          <path d="M1.563 90.667v-56.51h16.146l8.073 16.146h48.438l8.073-16.146h16.146v56.51h-16.146v-16.146h-64.583v16.146h-16.146zM21.987 31.816l3.229 10.010h47.792l5.005-10.010-7.588-27.932q-0.162-0.888-0.807-1.453t-1.453-0.565h-36.328q-0.807 0-1.453 0.565t-0.807 1.453zM24.247 96.803l3.068-12.271q0.162-0.807 0.928-1.372t1.574-0.565h40.365q0.807 0 1.574 0.565t0.928 1.372l3.068 12.271q0.162 0.807-0.283 1.372t-1.251 0.565h-48.438q-0.807 0-1.251-0.565t-0.283-1.372z"></path>
+        </svg></a></div>
+  </div>
+</div>
+<div class="af-container">
+  <div class="row">
+    <div class="col col-md-12">
+      <div class="af-steps">
+        <ol class="af-steps-list">
+          <li class="af-steps-list-step past" title="Etape 1">
+            <div class="af-steps-list-stepLabel">
+              <div class="af-steps-list-stepNumber">1</div>
+              <div class="af-steps-list-stepTitle">Previous step</div>
+            </div>
+          </li>
+          <li class="af-steps-list-step past" title="Etape 2">
+            <div class="af-steps-list-stepLabel">
+              <div class="af-steps-list-stepNumber">2</div>
+              <div class="af-steps-list-stepTitle">Previous step</div>
+            </div>
+          </li>
+          <li class="af-steps-list-step on" title="Etape 3">
+            <div class="af-steps-list-stepLabel">
+              <div class="af-steps-list-stepNumber">3</div>
+              <div class="af-steps-list-stepTitle">Current step</div>
+            </div>
+          </li>
+          <li class="af-steps-list-step" title="Etape 3">
+            <div class="af-steps-list-stepLabel">
+              <div class="af-steps-list-stepNumber">4</div>
+              <div class="af-steps-list-stepTitle">Next step</div>
+            </div>
+          </li>
+          <li class="af-steps-list-step" title="Etape finale">
+            <div class="af-steps-list-stepLabel">
+              <div class="af-steps-list-stepNumber">
+                <svg class="glyphicon glyphicon-ok" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105 100">
+                  <path d="M0.854 57.792l34.917 35 68.167-68.333-17.667-17.667-50.583 50.583-17.167-17.25z"></path>
+                </svg>
+              </div>
+              <div class="af-steps-list-stepTitle">Confirmation</div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <table class="af-table">
+        <thead class="af-table__thead">
+          <tr class="af-table__tr">
+                  <th class="af-table__th af-table__th--sortable"><span class="af-table__th-content">
+                      <button class="af-btn af-btn--table-sorting af-btn--table-sorting--active" role="button">N° de contrat
+                        <svg class="glyphicon glyphicon-arrow-xs-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                          <path d="M86.799 36.75h-73.299l36.654 35.636 36.645-35.636z"></path>
+                        </svg>
+                      </button></span></th>
+                  <th class="af-table__th af-table__th--sortable"><span class="af-table__th-content">
+                      <button class="af-btn af-btn--table-sorting" role="button">N° de dossier
+                        <svg class="glyphicon glyphicon-sorting" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                          <path d="M87.477 42.738H12.523L50 5.262zM12.523 59.262h74.954L50 96.738z"></path>
+                        </svg>
+                      </button></span></th>
+                  <th class="af-table__th af-table__th--sortable"><span class="af-table__th-content">
+                      <button class="af-btn af-btn--table-sorting" role="button">N° de demande
+                        <svg class="glyphicon glyphicon-sorting" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                          <path d="M87.477 42.738H12.523L50 5.262zM12.523 59.262h74.954L50 96.738z"></path>
+                        </svg>
+                      </button></span></th>
+                  <th class="af-table__th af-table__th--sortable"><span class="af-table__th-content">
+                      <button class="af-btn af-btn--table-sorting" role="button">Site
+                        <svg class="glyphicon glyphicon-sorting" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                          <path d="M87.477 42.738H12.523L50 5.262zM12.523 59.262h74.954L50 96.738z"></path>
+                        </svg>
+                      </button></span></th>
+                  <th class="af-table__th af-table__th--sortable"><span class="af-table__th-content">
+                      <button class="af-btn af-btn--table-sorting" role="button">Date de mise à jour
+                        <svg class="glyphicon glyphicon-sorting" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                          <path d="M87.477 42.738H12.523L50 5.262zM12.523 59.262h74.954L50 96.738z"></path>
+                        </svg>
+                      </button></span></th>
+                  <th class="af-table__th af-table__th--sortable"><span class="af-table__th-content">
+                      <button class="af-btn af-btn--table-sorting" role="button">Décision
+                        <svg class="glyphicon glyphicon-sorting" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                          <path d="M87.477 42.738H12.523L50 5.262zM12.523 59.262h74.954L50 96.738z"></path>
+                        </svg>
+                      </button></span></th>
+                  <th class="af-table__th af-table__th--sortable"><span class="af-table__th-content">
+                      <button class="af-btn af-btn--table-sorting" role="button">Statut du dossier
+                        <svg class="glyphicon glyphicon-sorting" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                          <path d="M87.477 42.738H12.523L50 5.262zM12.523 59.262h74.954L50 96.738z"></path>
+                        </svg>
+                      </button></span></th>
+                  <th class="af-table__th"><span class="af-table__th-content">Action</span></th>
+          </tr>
+        </thead>
+        <tbody class="af-table__body">
+                <tr class="af-table__tr">
+                  <td class="af-table__cell"><a class="af-link" href="">25487696</a></td>
+                  <td class="af-table__cell"><a class="af-link" href="">1594458644</a></td>
+                  <td class="af-table__cell">7359</td>
+                  <td class="af-table__cell">BellBoeuf</td>
+                  <td class="af-table__cell">01/03/2017</td>
+                  <td class="af-table__cell">Acceptation totale</td>
+                  <td class="af-table__cell">
+                          <div class="af-status"><span class="glyphicon-ring glyphicon-ring--banque">
+                              <svg class="glyphicon glyphicon-option-horizontal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                <path d="M14.152,36.557c3.705,0,6.869,1.314,9.501,3.939c2.633,2.633,3.945,5.796,3.941,9.505
+	c-0.002,3.702-1.315,6.873-3.941,9.499c-2.625,2.628-5.792,3.944-9.501,3.944c-3.708,0-6.876-1.316-9.502-3.944
+	c-2.626-2.626-3.938-5.797-3.941-9.499c-0.003-3.709,1.31-6.872,3.941-9.505C7.282,37.871,10.446,36.557,14.152,36.557z
+	 M49.999,36.557c3.705,0,6.869,1.314,9.501,3.939c2.633,2.633,3.945,5.796,3.941,9.505c-0.002,3.702-1.316,6.873-3.941,9.499
+	c-2.625,2.628-5.793,3.944-9.501,3.944c-3.709,0-6.876-1.316-9.502-3.944c-2.625-2.626-3.938-5.797-3.941-9.499
+	c-0.004-3.709,1.31-6.872,3.941-9.505C43.129,37.871,46.293,36.557,49.999,36.557z M85.85,36.557c3.701,0,6.871,1.314,9.5,3.939
+	c2.629,2.633,3.941,5.796,3.941,9.505c0,3.702-1.316,6.873-3.941,9.499c-2.625,2.628-5.793,3.944-9.5,3.944
+	c-3.709,0-6.877-1.316-9.502-3.944c-2.627-2.626-3.943-5.797-3.943-9.499c0-3.709,1.314-6.872,3.943-9.505
+	C78.975,37.871,82.146,36.557,85.85,36.557z"></path>
+                              </svg></span>En cours
+                          </div>
+                  </td>
+                  <td class="af-table__cell"><a class="af-link af-link--hasIconLeft" href="#">
+                      <svg class="glyphicon glyphicon-pencil" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106 100">
+                        <path d="M3.718 98.426l26.043-8.759-17.44-17.44zM19.359 65.892l16.736 16.736 48.019-48.019-16.736-16.736zM74.104 11.148l16.736 16.736 7.742-7.195q1.017-1.017 1.017-2.542t-1.017-2.62l-11.966-11.966q-1.173-1.017-2.581-1.017t-2.581 1.017z"></path>
+                      </svg><span class="af-link__text">Consulter</span></a></td>
+                </tr>
+                <tr class="af-table__tr">
+                  <td class="af-table__cell"><a class="af-link" href="">25487296</a></td>
+                  <td class="af-table__cell"><a class="af-link" href="">1594458044</a></td>
+                  <td class="af-table__cell">7059</td>
+                  <td class="af-table__cell">Toulouse</td>
+                  <td class="af-table__cell">01/06/2007</td>
+                  <td class="af-table__cell">Acceptation partielle</td>
+                  <td class="af-table__cell">
+                          <div class="af-status"><span class="glyphicon-ring glyphicon-ring--warning">
+                              <svg class="glyphicon glyphicon-arrowthin-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                <path d="M5.6,57.8l-0.2,0h66.9l-21,21.1c-1,1-1.6,2.4-1.6,3.9s0.6,2.8,1.6,3.9l3.3,3.3c1,1,2.4,1.6,3.9,1.6s2.8-0.6,3.9-1.6
+		l36.1-36.1c1-1,1.6-2.4,1.6-3.9c0-1.5-0.6-2.8-1.6-3.9L62.3,10.1c-1-1-2.4-1.6-3.9-1.6s-2.8,0.6-3.9,1.6l-3.3,3.3
+		c-1,1-1.6,2.4-1.6,3.9c0,1.5,0.6,2.8,1.6,3.8l21.3,21.2H5.5c-3,0-5.5,2.6-5.5,5.6l0,4.6C0,55.4,2.6,57.8,5.6,57.8z"></path>
+                              </svg></span>Transmis
+                          </div>
+                  </td>
+                  <td class="af-table__cell"><a class="af-link af-link--hasIconLeft" href="#">
+                      <svg class="glyphicon glyphicon-pencil" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106 100">
+                        <path d="M3.718 98.426l26.043-8.759-17.44-17.44zM19.359 65.892l16.736 16.736 48.019-48.019-16.736-16.736zM74.104 11.148l16.736 16.736 7.742-7.195q1.017-1.017 1.017-2.542t-1.017-2.62l-11.966-11.966q-1.173-1.017-2.581-1.017t-2.581 1.017z"></path>
+                      </svg><span class="af-link__text">Consulter</span></a></td>
+                </tr>
+                <tr class="af-table__tr">
+                  <td class="af-table__cell"><a class="af-link" href="">22487296</a></td>
+                  <td class="af-table__cell"><a class="af-link" href="">1594428044</a></td>
+                  <td class="af-table__cell">7052</td>
+                  <td class="af-table__cell">NA</td>
+                  <td class="af-table__cell">11/06/2000</td>
+                  <td class="af-table__cell">Refus</td>
+                  <td class="af-table__cell">
+                          <div class="af-status"><span class="glyphicon-ring glyphicon-ring--success">
+                              <svg class="glyphicon glyphicon-ok" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105 100">
+                                <path d="M0.854 57.792l34.917 35 68.167-68.333-17.667-17.667-50.583 50.583-17.167-17.25z"></path>
+                              </svg></span>Clos
+                          </div>
+                  </td>
+                  <td class="af-table__cell"><a class="af-link af-link--hasIconLeft" href="#">
+                      <svg class="glyphicon glyphicon-pencil" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106 100">
+                        <path d="M3.718 98.426l26.043-8.759-17.44-17.44zM19.359 65.892l16.736 16.736 48.019-48.019-16.736-16.736zM74.104 11.148l16.736 16.736 7.742-7.195q1.017-1.017 1.017-2.542t-1.017-2.62l-11.966-11.966q-1.173-1.017-2.581-1.017t-2.581 1.017z"></path>
+                      </svg><span class="af-link__text">Consulter</span></a></td>
+                </tr>
+                <tr class="af-table__tr">
+                  <td class="af-table__cell"><a class="af-link" href="">25487696</a></td>
+                  <td class="af-table__cell"><a class="af-link" href="">1594458644</a></td>
+                  <td class="af-table__cell">7359</td>
+                  <td class="af-table__cell">BellBoeuf</td>
+                  <td class="af-table__cell">01/03/2017</td>
+                  <td class="af-table__cell">Acceptation totale</td>
+                  <td class="af-table__cell">
+                          <div class="af-status"><span class="glyphicon-ring glyphicon-ring--banque">
+                              <svg class="glyphicon glyphicon-option-horizontal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                <path d="M14.152,36.557c3.705,0,6.869,1.314,9.501,3.939c2.633,2.633,3.945,5.796,3.941,9.505
+	c-0.002,3.702-1.315,6.873-3.941,9.499c-2.625,2.628-5.792,3.944-9.501,3.944c-3.708,0-6.876-1.316-9.502-3.944
+	c-2.626-2.626-3.938-5.797-3.941-9.499c-0.003-3.709,1.31-6.872,3.941-9.505C7.282,37.871,10.446,36.557,14.152,36.557z
+	 M49.999,36.557c3.705,0,6.869,1.314,9.501,3.939c2.633,2.633,3.945,5.796,3.941,9.505c-0.002,3.702-1.316,6.873-3.941,9.499
+	c-2.625,2.628-5.793,3.944-9.501,3.944c-3.709,0-6.876-1.316-9.502-3.944c-2.625-2.626-3.938-5.797-3.941-9.499
+	c-0.004-3.709,1.31-6.872,3.941-9.505C43.129,37.871,46.293,36.557,49.999,36.557z M85.85,36.557c3.701,0,6.871,1.314,9.5,3.939
+	c2.629,2.633,3.941,5.796,3.941,9.505c0,3.702-1.316,6.873-3.941,9.499c-2.625,2.628-5.793,3.944-9.5,3.944
+	c-3.709,0-6.877-1.316-9.502-3.944c-2.627-2.626-3.943-5.797-3.943-9.499c0-3.709,1.314-6.872,3.943-9.505
+	C78.975,37.871,82.146,36.557,85.85,36.557z"></path>
+                              </svg></span>En cours
+                          </div>
+                  </td>
+                  <td class="af-table__cell"><a class="af-link af-link--hasIconLeft" href="#">
+                      <svg class="glyphicon glyphicon-pencil" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106 100">
+                        <path d="M3.718 98.426l26.043-8.759-17.44-17.44zM19.359 65.892l16.736 16.736 48.019-48.019-16.736-16.736zM74.104 11.148l16.736 16.736 7.742-7.195q1.017-1.017 1.017-2.542t-1.017-2.62l-11.966-11.966q-1.173-1.017-2.581-1.017t-2.581 1.017z"></path>
+                      </svg><span class="af-link__text">Consulter</span></a></td>
+                </tr>
+                <tr class="af-table__tr">
+                  <td class="af-table__cell"><a class="af-link" href="">25487296</a></td>
+                  <td class="af-table__cell"><a class="af-link" href="">1594458044</a></td>
+                  <td class="af-table__cell">7059</td>
+                  <td class="af-table__cell">Toulouse</td>
+                  <td class="af-table__cell">01/06/2007</td>
+                  <td class="af-table__cell">Acceptation partielle</td>
+                  <td class="af-table__cell">
+                          <div class="af-status"><span class="glyphicon-ring glyphicon-ring--warning">
+                              <svg class="glyphicon glyphicon-arrowthin-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                <path d="M5.6,57.8l-0.2,0h66.9l-21,21.1c-1,1-1.6,2.4-1.6,3.9s0.6,2.8,1.6,3.9l3.3,3.3c1,1,2.4,1.6,3.9,1.6s2.8-0.6,3.9-1.6
+		l36.1-36.1c1-1,1.6-2.4,1.6-3.9c0-1.5-0.6-2.8-1.6-3.9L62.3,10.1c-1-1-2.4-1.6-3.9-1.6s-2.8,0.6-3.9,1.6l-3.3,3.3
+		c-1,1-1.6,2.4-1.6,3.9c0,1.5,0.6,2.8,1.6,3.8l21.3,21.2H5.5c-3,0-5.5,2.6-5.5,5.6l0,4.6C0,55.4,2.6,57.8,5.6,57.8z"></path>
+                              </svg></span>Transmis
+                          </div>
+                  </td>
+                  <td class="af-table__cell"><a class="af-link af-link--hasIconLeft" href="#">
+                      <svg class="glyphicon glyphicon-pencil" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106 100">
+                        <path d="M3.718 98.426l26.043-8.759-17.44-17.44zM19.359 65.892l16.736 16.736 48.019-48.019-16.736-16.736zM74.104 11.148l16.736 16.736 7.742-7.195q1.017-1.017 1.017-2.542t-1.017-2.62l-11.966-11.966q-1.173-1.017-2.581-1.017t-2.581 1.017z"></path>
+                      </svg><span class="af-link__text">Consulter</span></a></td>
+                </tr>
+                <tr class="af-table__tr">
+                  <td class="af-table__cell"><a class="af-link" href="">22487296</a></td>
+                  <td class="af-table__cell"><a class="af-link" href="">1594428044</a></td>
+                  <td class="af-table__cell">7052</td>
+                  <td class="af-table__cell">NA</td>
+                  <td class="af-table__cell">11/06/2000</td>
+                  <td class="af-table__cell">Refus</td>
+                  <td class="af-table__cell">
+                          <div class="af-status"><span class="glyphicon-ring glyphicon-ring--success">
+                              <svg class="glyphicon glyphicon-ok" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105 100">
+                                <path d="M0.854 57.792l34.917 35 68.167-68.333-17.667-17.667-50.583 50.583-17.167-17.25z"></path>
+                              </svg></span>Clos
+                          </div>
+                  </td>
+                  <td class="af-table__cell"><a class="af-link af-link--hasIconLeft" href="#">
+                      <svg class="glyphicon glyphicon-pencil" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106 100">
+                        <path d="M3.718 98.426l26.043-8.759-17.44-17.44zM19.359 65.892l16.736 16.736 48.019-48.019-16.736-16.736zM74.104 11.148l16.736 16.736 7.742-7.195q1.017-1.017 1.017-2.542t-1.017-2.62l-11.966-11.966q-1.173-1.017-2.581-1.017t-2.581 1.017z"></path>
+                      </svg><span class="af-link__text">Consulter</span></a></td>
+                </tr>
+                <tr class="af-table__tr">
+                  <td class="af-table__cell"><a class="af-link" href="">25487696</a></td>
+                  <td class="af-table__cell"><a class="af-link" href="">1594458644</a></td>
+                  <td class="af-table__cell">7359</td>
+                  <td class="af-table__cell">BellBoeuf</td>
+                  <td class="af-table__cell">01/03/2017</td>
+                  <td class="af-table__cell">Acceptation totale</td>
+                  <td class="af-table__cell">
+                          <div class="af-status"><span class="glyphicon-ring glyphicon-ring--banque">
+                              <svg class="glyphicon glyphicon-option-horizontal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                <path d="M14.152,36.557c3.705,0,6.869,1.314,9.501,3.939c2.633,2.633,3.945,5.796,3.941,9.505
+	c-0.002,3.702-1.315,6.873-3.941,9.499c-2.625,2.628-5.792,3.944-9.501,3.944c-3.708,0-6.876-1.316-9.502-3.944
+	c-2.626-2.626-3.938-5.797-3.941-9.499c-0.003-3.709,1.31-6.872,3.941-9.505C7.282,37.871,10.446,36.557,14.152,36.557z
+	 M49.999,36.557c3.705,0,6.869,1.314,9.501,3.939c2.633,2.633,3.945,5.796,3.941,9.505c-0.002,3.702-1.316,6.873-3.941,9.499
+	c-2.625,2.628-5.793,3.944-9.501,3.944c-3.709,0-6.876-1.316-9.502-3.944c-2.625-2.626-3.938-5.797-3.941-9.499
+	c-0.004-3.709,1.31-6.872,3.941-9.505C43.129,37.871,46.293,36.557,49.999,36.557z M85.85,36.557c3.701,0,6.871,1.314,9.5,3.939
+	c2.629,2.633,3.941,5.796,3.941,9.505c0,3.702-1.316,6.873-3.941,9.499c-2.625,2.628-5.793,3.944-9.5,3.944
+	c-3.709,0-6.877-1.316-9.502-3.944c-2.627-2.626-3.943-5.797-3.943-9.499c0-3.709,1.314-6.872,3.943-9.505
+	C78.975,37.871,82.146,36.557,85.85,36.557z"></path>
+                              </svg></span>En cours
+                          </div>
+                  </td>
+                  <td class="af-table__cell"><a class="af-link af-link--hasIconLeft" href="#">
+                      <svg class="glyphicon glyphicon-pencil" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106 100">
+                        <path d="M3.718 98.426l26.043-8.759-17.44-17.44zM19.359 65.892l16.736 16.736 48.019-48.019-16.736-16.736zM74.104 11.148l16.736 16.736 7.742-7.195q1.017-1.017 1.017-2.542t-1.017-2.62l-11.966-11.966q-1.173-1.017-2.581-1.017t-2.581 1.017z"></path>
+                      </svg><span class="af-link__text">Consulter</span></a></td>
+                </tr>
+                <tr class="af-table__tr">
+                  <td class="af-table__cell"><a class="af-link" href="">25487296</a></td>
+                  <td class="af-table__cell"><a class="af-link" href="">1594458044</a></td>
+                  <td class="af-table__cell">7059</td>
+                  <td class="af-table__cell">Toulouse</td>
+                  <td class="af-table__cell">01/06/2007</td>
+                  <td class="af-table__cell">Acceptation partielle</td>
+                  <td class="af-table__cell">
+                          <div class="af-status"><span class="glyphicon-ring glyphicon-ring--warning">
+                              <svg class="glyphicon glyphicon-arrowthin-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                <path d="M5.6,57.8l-0.2,0h66.9l-21,21.1c-1,1-1.6,2.4-1.6,3.9s0.6,2.8,1.6,3.9l3.3,3.3c1,1,2.4,1.6,3.9,1.6s2.8-0.6,3.9-1.6
+		l36.1-36.1c1-1,1.6-2.4,1.6-3.9c0-1.5-0.6-2.8-1.6-3.9L62.3,10.1c-1-1-2.4-1.6-3.9-1.6s-2.8,0.6-3.9,1.6l-3.3,3.3
+		c-1,1-1.6,2.4-1.6,3.9c0,1.5,0.6,2.8,1.6,3.8l21.3,21.2H5.5c-3,0-5.5,2.6-5.5,5.6l0,4.6C0,55.4,2.6,57.8,5.6,57.8z"></path>
+                              </svg></span>Transmis
+                          </div>
+                  </td>
+                  <td class="af-table__cell"><a class="af-link af-link--hasIconLeft" href="#">
+                      <svg class="glyphicon glyphicon-pencil" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106 100">
+                        <path d="M3.718 98.426l26.043-8.759-17.44-17.44zM19.359 65.892l16.736 16.736 48.019-48.019-16.736-16.736zM74.104 11.148l16.736 16.736 7.742-7.195q1.017-1.017 1.017-2.542t-1.017-2.62l-11.966-11.966q-1.173-1.017-2.581-1.017t-2.581 1.017z"></path>
+                      </svg><span class="af-link__text">Consulter</span></a></td>
+                </tr>
+                <tr class="af-table__tr">
+                  <td class="af-table__cell"><a class="af-link" href="">22487296</a></td>
+                  <td class="af-table__cell"><a class="af-link" href="">1594428044</a></td>
+                  <td class="af-table__cell">7052</td>
+                  <td class="af-table__cell">NA</td>
+                  <td class="af-table__cell">11/06/2000</td>
+                  <td class="af-table__cell">Refus</td>
+                  <td class="af-table__cell">
+                          <div class="af-status"><span class="glyphicon-ring glyphicon-ring--success">
+                              <svg class="glyphicon glyphicon-ok" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105 100">
+                                <path d="M0.854 57.792l34.917 35 68.167-68.333-17.667-17.667-50.583 50.583-17.167-17.25z"></path>
+                              </svg></span>Clos
+                          </div>
+                  </td>
+                  <td class="af-table__cell"><a class="af-link af-link--hasIconLeft" href="#">
+                      <svg class="glyphicon glyphicon-pencil" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106 100">
+                        <path d="M3.718 98.426l26.043-8.759-17.44-17.44zM19.359 65.892l16.736 16.736 48.019-48.019-16.736-16.736zM74.104 11.148l16.736 16.736 7.742-7.195q1.017-1.017 1.017-2.542t-1.017-2.62l-11.966-11.966q-1.173-1.017-2.581-1.017t-2.581 1.017z"></path>
+                      </svg><span class="af-link__text">Consulter</span></a></td>
+                </tr>
+                <tr class="af-table__tr">
+                  <td class="af-table__cell"><a class="af-link" href="">25487296</a></td>
+                  <td class="af-table__cell"><a class="af-link" href="">1594458044</a></td>
+                  <td class="af-table__cell">7059</td>
+                  <td class="af-table__cell">Toulouse</td>
+                  <td class="af-table__cell">01/06/2007</td>
+                  <td class="af-table__cell">Acceptation partielle</td>
+                  <td class="af-table__cell">
+                          <div class="af-status"><span class="glyphicon-ring glyphicon-ring--warning">
+                              <svg class="glyphicon glyphicon-arrowthin-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                <path d="M5.6,57.8l-0.2,0h66.9l-21,21.1c-1,1-1.6,2.4-1.6,3.9s0.6,2.8,1.6,3.9l3.3,3.3c1,1,2.4,1.6,3.9,1.6s2.8-0.6,3.9-1.6
+		l36.1-36.1c1-1,1.6-2.4,1.6-3.9c0-1.5-0.6-2.8-1.6-3.9L62.3,10.1c-1-1-2.4-1.6-3.9-1.6s-2.8,0.6-3.9,1.6l-3.3,3.3
+		c-1,1-1.6,2.4-1.6,3.9c0,1.5,0.6,2.8,1.6,3.8l21.3,21.2H5.5c-3,0-5.5,2.6-5.5,5.6l0,4.6C0,55.4,2.6,57.8,5.6,57.8z"></path>
+                              </svg></span>Transmis
+                          </div>
+                  </td>
+                  <td class="af-table__cell"><a class="af-link af-link--hasIconLeft" href="#">
+                      <svg class="glyphicon glyphicon-pencil" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106 100">
+                        <path d="M3.718 98.426l26.043-8.759-17.44-17.44zM19.359 65.892l16.736 16.736 48.019-48.019-16.736-16.736zM74.104 11.148l16.736 16.736 7.742-7.195q1.017-1.017 1.017-2.542t-1.017-2.62l-11.966-11.966q-1.173-1.017-2.581-1.017t-2.581 1.017z"></path>
+                      </svg><span class="af-link__text">Consulter</span></a></td>
+                </tr>
+        </tbody>
+      </table>
+      <div class="af-paging">
+        <div class="af-paging__limit">
+          <form class="af-paging__form">
+            <div class="af-form__group">
+              <div class="col col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <label class="af-form__group-label" for="pagination">Afficher</label>
+              </div>
+              <div class="col col-sm-10 col-md-10 col-lg-10 col-xl-10">
+                <div class="af-form__select">
+                  <div class="af-form__select-container">
+                    <select class="af-form__input-select">
+                      <option value="5">5</option>
+                      <option value="10">10</option>
+                      <option value="15">15</option>
+                      <option value="20">20</option>
+                    </select>
+                    <svg class="glyphicon glyphicon-menu-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                      <path d="M98.4,16.2c0.7,0.3,1.1,1,1.1,2.1v15.9c0,0.9-0.3,1.6-0.9,2.3L51.8,83.2c-0.5,0.5-1.1,0.7-1.8,0.7
+	s-1.3-0.2-1.8-0.7L1.4,36.5c-0.6-0.7-0.9-1.4-0.9-2.3V18.3c0-1.1,0.4-1.8,1.1-2.1c0.7-0.3,1.5-0.1,2.3,0.7L50,63l46.1-46.1
+	C96.9,16.1,97.6,15.9,98.4,16.2L98.4,16.2z"></path>
+                    </svg>
+                  </div><span class="af-form__input-cmplt">éléments</span>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="af-paging__pager">
+          <nav class="af-pager">
+            <ul class="af-pager__pagination">
+              <li class="af-pager__item"><a class="af-pager__item-link" href="#"><span class="af-pager__item-icon">&laquo;</span><span class="af-pager__item-text">Pr&eacute;c&eacute;dent</span></a></li>
+              <li class="af-pager__item"><a class="af-pager__item-link" href="#">1</a></li>
+              <li class="af-pager__item af-pager__item--disabled"><span class="af-pager__item-link">...</span></li>
+              <li class="af-pager__item"><a class="af-pager__item-link" href="#">4</a></li>
+              <li class="af-pager__item af-pager__item--active"><a class="af-pager__item-link" href="#">5</a></li>
+              <li class="af-pager__item"><a class="af-pager__item-link" href="#">6</a></li>
+              <li class="af-pager__item af-pager__item--disabled">...</li>
+              <li class="af-pager__item"><a class="af-pager__item-link" href="#">23</a></li>
+              <li class="af-pager__item"><a class="af-pager__item-link" href="#"><span class="af-pager__item-text">Suivant</span><span class="af-pager__item-icon">&raquo;</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="af-footer">
+  <div class="af-container"><a class="af-logo" href="https://www.axa.fr/" title="Site Axa France" target="blank"><img class="af-logo__brand" src="../../assets/images/slash-logo.svg" alt="Logo Slash Design System"/></a>
+    <div class="af-footer-content">@ 2020 AXA Tous droits réservés</div>
+  </div>
+</footer></div></div><div class="tk-tabs  tk-tabs--demo js-tabs  js-tabs--demo"><div class="tk-tabs__nav" role="tablist" aria-label="navigation"><button class="tk-tabs__nav-item  tk-tabs__nav-item--active js-tabs__nav-item  js-tabs__nav-item--active" data-nav-id="11" role="tab" tabindex="0" aria-selected="true" aria-controls="nav-tab"><span>HTML</span></button><button class="tk-tabs__nav-item js-tabs__nav-item" data-nav-id="12" role="tab" tabindex="-1" aria-selected="false" aria-controls="nav-tab"><span>SASS</span></button><button class="tk-tabs__nav-item js-tabs__nav-item" data-nav-id="13" role="tab" tabindex="-1" aria-selected="false" aria-controls="nav-tab"><span>REACT</span></button></div><article class="tk-tabs__content"><section class="tk-tabs__content-item  tk-tabs__content-item--active js-tabs__content-item  js-tabs__content-item--active" data-id="tabs__content-item--11" role="tabpanel"><div class="tk-code__wrapper-outer"><div class="tk-code__wrapper-middle"><div class="tk-code__wrapper-inner"><div class="tk-code__icon"><svg class="tk-icon  tk-icon--copy " viewbox="0 0 36 36" width="36" height="36"><use xlink:href="#copy"></use></svg><span class="tk-code__icon-text">Copied</span></div><pre class="pre"><code class="html">&lt;div class=&quot;af-header&quot;&gt;
+    &lt;div class=&quot;af-container af-header__wrapper&quot;&gt;
+        &lt;header class=&quot;af-header__content&quot; role=&quot;banner&quot;&gt;
+            &lt;div class=&quot;af-header__name&quot;&gt;&lt;a class=&quot;af-logo&quot; href=&quot;/&quot;&gt;&lt;img class=&quot;af-logo__brand&quot; src=&quot;../../assets/images/slash-logo.svg&quot; alt=&quot;Logo Slash Design System&quot; /&gt;&lt;/a&gt;
+                &lt;h2 class=&quot;af-header__title&quot;&gt;Nom de l&amp;apos;application&lt;small class=&quot;af-header__subtitle&quot;&gt;Baseline&lt;/small&gt;&lt;/h2&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;af-contrat&quot;&gt;
+                &lt;svg class=&quot;glyphicon glyphicon-info-sign&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 100 100&quot;&gt;
+                    &lt;path d=&quot;M50.382 0.736c-27.365 0-49.549 22.184-49.549 49.55 0 27.364 22.184 49.547 49.549 49.547 27.365 0 49.548-22.183 49.548-49.547 0-27.366-22.183-49.55-49.548-49.55zM58.151 68.517c-3.74 5.613-7.544 9.941-13.944 9.941-4.369-0.712-6.163-3.843-5.214-7.031l8.233-27.269c0.198-0.668-0.135-1.381-0.744-1.594-0.609-0.214-1.799 0.576-2.829 1.702l-4.975 5.988c-0.136-1.003-0.014-2.667-0.014-3.337 3.74-5.612 9.88-10.044 14.046-10.044 3.962 0.407 5.833 3.571 5.144 7.050l-8.29 27.402c-0.111 0.62 0.216 1.246 0.779 1.444 0.609 0.213 1.89-0.576 2.92-1.703l4.975-5.988c0.136 1.002-0.087 2.769-0.087 3.439zM57.043 32.901c-3.149 0-5.701-2.291-5.701-5.671 0-3.378 2.552-5.669 5.701-5.669 3.148 0 5.701 2.291 5.701 5.669-0.001 3.381-2.553 5.671-5.701 5.671z&quot;&gt;&lt;/path&gt;
+                &lt;/svg&gt;
+                &lt;dl class=&quot;af-contrat__list&quot;&gt;
+                    &lt;dt class=&quot;af-contrat__word&quot;&gt;Client :&lt;/dt&gt;
+                    &lt;dd class=&quot;af-contrat__def&quot;&gt;0123456789 - NOM&lt;/dd&gt;
+                    &lt;dt class=&quot;af-contrat__word&quot;&gt;Portefeuille :&lt;/dt&gt;
+                    &lt;dd class=&quot;af-contrat__def&quot;&gt;000123456789&lt;/dd&gt;
+                    &lt;dt class=&quot;af-contrat__word&quot;&gt;Status :&lt;/dt&gt;
+                    &lt;dd class=&quot;af-contrat__def&quot;&gt;Affaire nouvelle&lt;/dd&gt;
+                &lt;/dl&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;af-info-user&quot;&gt;&lt;a class=&quot;af-info-user__link&quot; href=&quot;/profile&quot; title=&quot;Voir mon profil&quot;&gt;&lt;span class=&quot;af-info-user__name&quot;&gt;Pierre Martin&lt;/span&gt;&lt;span class=&quot;af-info-user__profile&quot;&gt;[Profile]&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;/header&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;af-nav-container&quot;&gt;
+    &lt;button class=&quot;mask fade show&quot; type=&quot;button&quot;&gt;&lt;/button&gt;
+    &lt;nav class=&quot;af-nav af-drawer left show&quot; role=&quot;navigation&quot; aria-label=&quot;Menu principal&quot;&gt;
+        &lt;div class=&quot;af-container af-nav__wrapper&quot;&gt;
+            &lt;div class=&quot;af-nav__aside-header&quot;&gt;
+                &lt;h4 class=&quot;af-nav__aside-title&quot;&gt;Menu&lt;/h4&gt;&lt;a class=&quot;af-nav__aside-close&quot; href=&quot;#&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-controls=&quot;idmenu&quot; id=&quot;menubutton&quot;&gt;×&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;ul class=&quot;af-nav__list&quot; role=&quot;menubar&quot; aria-labelledby=&quot;menubutton&quot; id=&quot;idmenu&quot;&gt;
+                &lt;li class=&quot;af-nav__item af-nav__item--active&quot; role=&quot;none&quot;&gt;&lt;a class=&quot;af-nav__link&quot; role=&quot;menuitem&quot; href=&quot;/home&quot; tabindex=&quot;0&quot;&gt;Home&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;af-nav__item&quot; role=&quot;none&quot;&gt;&lt;a class=&quot;af-nav__link&quot; role=&quot;menuitem&quot; href=&quot;/form&quot; tabindex=&quot;-1&quot;&gt;Forms&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;af-nav__item&quot; role=&quot;none&quot;&gt;&lt;a class=&quot;af-nav__link&quot; role=&quot;menuitem&quot; href=&quot;/fileupload&quot; tabindex=&quot;-1&quot;&gt;Fileupload&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;af-nav__item&quot; role=&quot;none&quot;&gt;&lt;a class=&quot;af-nav__link&quot; role=&quot;menuitem&quot; href=&quot;/table&quot; tabindex=&quot;-1&quot;&gt;Table&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;af-nav__item&quot; role=&quot;none&quot;&gt;&lt;a class=&quot;af-nav__link&quot; role=&quot;menuitem&quot; href=&quot;/collapse&quot; tabindex=&quot;-1&quot;&gt;Accordions&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;af-nav__item&quot; role=&quot;none&quot;&gt;&lt;a class=&quot;af-nav__link&quot; role=&quot;menuitem&quot; href=&quot;/table&quot; tabindex=&quot;-1&quot;&gt; Drag n drop&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;af-nav__item&quot; role=&quot;none&quot;&gt;&lt;a class=&quot;af-nav__link&quot; role=&quot;menuitem&quot; href=&quot;/alert&quot; tabindex=&quot;-1&quot;&gt;Alerts&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;af-nav__item&quot; role=&quot;none&quot;&gt;&lt;a class=&quot;af-nav__link&quot; role=&quot;menuitem&quot; href=&quot;/contributing&quot; tabindex=&quot;-1&quot;&gt;Validation&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;af-nav__item af-nav__item--haschild&quot; role=&quot;none&quot;&gt;&lt;a class=&quot;af-nav__link&quot; role=&quot;menuitem&quot; href=&quot;/doc&quot; tabindex=&quot;-1&quot; aria-haspopup=&quot;aria-haspopup&quot; aria-expanded=&quot;aria-expanded&quot;&gt;Doc&lt;/a&gt;
+                    &lt;svg class=&quot;glyphicon glyphicon-arrow-xs-down&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 100 100&quot;&gt;
+                        &lt;path d=&quot;M86.799 36.75h-73.299l36.654 35.636 36.645-35.636z&quot;&gt;&lt;/path&gt;
+                    &lt;/svg&gt;
+                    &lt;ul class=&quot;af-nav__list af-nav__list--children&quot; role=&quot;menu&quot; aria-label=&quot;Doc&quot;&gt;
+                        &lt;li class=&quot;af-nav__item&quot; role=&quot;none&quot;&gt;&lt;a class=&quot;af-nav__link&quot; role=&quot;menuitem&quot; href=&quot;/doc/sous-lien&quot; tabindex=&quot;-1&quot;&gt;Sous lien&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;af-nav__item&quot; role=&quot;none&quot;&gt;&lt;a class=&quot;af-nav__link&quot; role=&quot;menuitem&quot; href=&quot;/doc/sous-lien2&quot; tabindex=&quot;-1&quot;&gt;Sous lien 2&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;af-nav__item&quot; role=&quot;none&quot;&gt;&lt;a class=&quot;af-nav__link&quot; role=&quot;menuitem&quot; href=&quot;/doc/sous-lien3&quot; tabindex=&quot;-1&quot;&gt;Sous lien 3&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;af-nav__item&quot; role=&quot;none&quot;&gt;&lt;a class=&quot;af-nav__link&quot; role=&quot;menuitem&quot; href=&quot;/doc/sous-lien4&quot; tabindex=&quot;-1&quot;&gt;Sous lien 4&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+&lt;/div&gt;
+&lt;div class=&quot;af-title-bar&quot;&gt;
+    &lt;div class=&quot;af-title-bar__wrapper af-container&quot;&gt;
+        &lt;button class=&quot;af-btn-circle af-title-bar__mobile-menu&quot;&gt;
+            &lt;div class=&quot;af-btn__wrapper&quot;&gt;
+                &lt;svg class=&quot;glyphicon glyphicon-menu-hamburger&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 100 100&quot;&gt;
+                    &lt;path d=&quot;M3.649,1.21h92.701c0.65,0,1.222,0.243,1.708,0.73c0.487,0.49,0.732,1.057,0.732,1.71v14.638
+	c0,0.65-0.245,1.221-0.732,1.707c-0.486,0.488-1.058,0.732-1.708,0.732H3.649c-0.653,0-1.219-0.244-1.708-0.732
+	c-0.489-0.486-0.732-1.057-0.732-1.707V3.65c0-0.653,0.243-1.22,0.732-1.71C2.431,1.453,2.996,1.21,3.649,1.21L3.649,1.21z
+	 M3.649,40.241h92.701c0.65,0,1.222,0.244,1.708,0.729c0.487,0.486,0.732,1.059,0.732,1.709v14.638c0,0.65-0.245,1.222-0.732,1.708
+	c-0.486,0.488-1.058,0.736-1.708,0.736H3.649c-0.653,0-1.219-0.248-1.708-0.736c-0.489-0.486-0.732-1.058-0.732-1.708V42.679
+	c0-0.65,0.243-1.223,0.732-1.709C2.431,40.485,2.996,40.241,3.649,40.241L3.649,40.241z M3.649,79.272h92.701
+	c0.65,0,1.222,0.241,1.708,0.731c0.487,0.49,0.732,1.058,0.732,1.712v14.638c0,0.65-0.245,1.219-0.732,1.708
+	c-0.486,0.485-1.058,0.729-1.708,0.729H3.649c-0.653,0-1.219-0.243-1.708-0.729c-0.489-0.489-0.732-1.058-0.732-1.708V81.716
+	c0-0.654,0.243-1.222,0.732-1.712S2.996,79.272,3.649,79.272L3.649,79.272z&quot;&gt;&lt;/path&gt;
+                &lt;/svg&gt;
+            &lt;/div&gt;
+        &lt;/button&gt;
+        &lt;h1 class=&quot;af-title-bar__title&quot;&gt;Slash Design System&lt;small class=&quot;af-title-bar__subtitle&quot;&gt;Sous titre&lt;/small&gt;&lt;/h1&gt;
+        &lt;div class=&quot;af-title-bar__actions&quot;&gt;&lt;a class=&quot;af-title-bar__link&quot; href=&quot;#lien&quot; title=&quot;lien titlebar&quot;&gt;lien titlebar&lt;/a&gt;&lt;a class=&quot;af-btn--circle&quot; href=&quot;#enregistrer&quot; title=&quot;Enregistrer&quot; role=&quot;button&quot; tabindex=&quot;0&quot;&gt;
+                &lt;svg class=&quot;glyphicon glyphicon-floppy-disk&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 100 100&quot;&gt;
+                    &lt;path d=&quot;M3.125 92.5v-83.333q0-1.667 1.208-2.917t2.958-1.25h20.833v25h41.667v-25h8.333l16.667 16.667v70.833q0 1.75-1.25 2.958t-2.917 1.208h-12.5v-33.333h-58.333v33.333h-12.5q-1.75 0-2.958-1.208t-1.208-2.958zM53.125 21.667h8.333v-16.667h-8.333v16.667z&quot;&gt;&lt;/path&gt;
+                &lt;/svg&gt;&lt;/a&gt;&lt;a class=&quot;af-btn--circle&quot; href=&quot;#imprimer&quot; title=&quot;Imprimer&quot; role=&quot;button&quot; tabindex=&quot;0&quot;&gt;
+                &lt;svg class=&quot;glyphicon glyphicon-print&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 100 100&quot;&gt;
+                    &lt;path d=&quot;M1.563 90.667v-56.51h16.146l8.073 16.146h48.438l8.073-16.146h16.146v56.51h-16.146v-16.146h-64.583v16.146h-16.146zM21.987 31.816l3.229 10.010h47.792l5.005-10.010-7.588-27.932q-0.162-0.888-0.807-1.453t-1.453-0.565h-36.328q-0.807 0-1.453 0.565t-0.807 1.453zM24.247 96.803l3.068-12.271q0.162-0.807 0.928-1.372t1.574-0.565h40.365q0.807 0 1.574 0.565t0.928 1.372l3.068 12.271q0.162 0.807-0.283 1.372t-1.251 0.565h-48.438q-0.807 0-1.251-0.565t-0.283-1.372z&quot;&gt;&lt;/path&gt;
+                &lt;/svg&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;af-container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col col-md-12&quot;&gt;
+            &lt;div class=&quot;af-steps&quot;&gt;
+                &lt;ol class=&quot;af-steps-list&quot;&gt;
+                    &lt;li class=&quot;af-steps-list-step past&quot; title=&quot;Etape 1&quot;&gt;
+                        &lt;div class=&quot;af-steps-list-stepLabel&quot;&gt;
+                            &lt;div class=&quot;af-steps-list-stepNumber&quot;&gt;1&lt;/div&gt;
+                            &lt;div class=&quot;af-steps-list-stepTitle&quot;&gt;Previous step&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;af-steps-list-step past&quot; title=&quot;Etape 2&quot;&gt;
+                        &lt;div class=&quot;af-steps-list-stepLabel&quot;&gt;
+                            &lt;div class=&quot;af-steps-list-stepNumber&quot;&gt;2&lt;/div&gt;
+                            &lt;div class=&quot;af-steps-list-stepTitle&quot;&gt;Previous step&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;af-steps-list-step on&quot; title=&quot;Etape 3&quot;&gt;
+                        &lt;div class=&quot;af-steps-list-stepLabel&quot;&gt;
+                            &lt;div class=&quot;af-steps-list-stepNumber&quot;&gt;3&lt;/div&gt;
+                            &lt;div class=&quot;af-steps-list-stepTitle&quot;&gt;Current step&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;af-steps-list-step&quot; title=&quot;Etape 3&quot;&gt;
+                        &lt;div class=&quot;af-steps-list-stepLabel&quot;&gt;
+                            &lt;div class=&quot;af-steps-list-stepNumber&quot;&gt;4&lt;/div&gt;
+                            &lt;div class=&quot;af-steps-list-stepTitle&quot;&gt;Next step&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;af-steps-list-step&quot; title=&quot;Etape finale&quot;&gt;
+                        &lt;div class=&quot;af-steps-list-stepLabel&quot;&gt;
+                            &lt;div class=&quot;af-steps-list-stepNumber&quot;&gt;
+                                &lt;svg class=&quot;glyphicon glyphicon-ok&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 105 100&quot;&gt;
+                                    &lt;path d=&quot;M0.854 57.792l34.917 35 68.167-68.333-17.667-17.667-50.583 50.583-17.167-17.25z&quot;&gt;&lt;/path&gt;
+                                &lt;/svg&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;af-steps-list-stepTitle&quot;&gt;Confirmation&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/li&gt;
+                &lt;/ol&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col col-sm-12 col-md-12 col-lg-12 col-xl-12&quot;&gt;
+            &lt;table class=&quot;af-table&quot;&gt;
+                &lt;thead class=&quot;af-table__thead&quot;&gt;
+                    &lt;tr class=&quot;af-table__tr&quot;&gt;
+                        &lt;th class=&quot;af-table__th af-table__th--sortable&quot;&gt;&lt;span class=&quot;af-table__th-content&quot;&gt;
+                                &lt;button class=&quot;af-btn af-btn--table-sorting af-btn--table-sorting--active&quot; role=&quot;button&quot;&gt;N° de contrat
+                                    &lt;svg class=&quot;glyphicon glyphicon-arrow-xs-down&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 100 100&quot;&gt;
+                                        &lt;path d=&quot;M86.799 36.75h-73.299l36.654 35.636 36.645-35.636z&quot;&gt;&lt;/path&gt;
+                                    &lt;/svg&gt;
+                                &lt;/button&gt;&lt;/span&gt;&lt;/th&gt;
+                        &lt;th class=&quot;af-table__th af-table__th--sortable&quot;&gt;&lt;span class=&quot;af-table__th-content&quot;&gt;
+                                &lt;button class=&quot;af-btn af-btn--table-sorting&quot; role=&quot;button&quot;&gt;N° de dossier
+                                    &lt;svg class=&quot;glyphicon glyphicon-sorting&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 100 100&quot;&gt;
+                                        &lt;path d=&quot;M87.477 42.738H12.523L50 5.262zM12.523 59.262h74.954L50 96.738z&quot;&gt;&lt;/path&gt;
+                                    &lt;/svg&gt;
+                                &lt;/button&gt;&lt;/span&gt;&lt;/th&gt;
+                        &lt;th class=&quot;af-table__th af-table__th--sortable&quot;&gt;&lt;span class=&quot;af-table__th-content&quot;&gt;
+                                &lt;button class=&quot;af-btn af-btn--table-sorting&quot; role=&quot;button&quot;&gt;N° de demande
+                                    &lt;svg class=&quot;glyphicon glyphicon-sorting&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 100 100&quot;&gt;
+                                        &lt;path d=&quot;M87.477 42.738H12.523L50 5.262zM12.523 59.262h74.954L50 96.738z&quot;&gt;&lt;/path&gt;
+                                    &lt;/svg&gt;
+                                &lt;/button&gt;&lt;/span&gt;&lt;/th&gt;
+                        &lt;th class=&quot;af-table__th af-table__th--sortable&quot;&gt;&lt;span class=&quot;af-table__th-content&quot;&gt;
+                                &lt;button class=&quot;af-btn af-btn--table-sorting&quot; role=&quot;button&quot;&gt;Site
+                                    &lt;svg class=&quot;glyphicon glyphicon-sorting&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 100 100&quot;&gt;
+                                        &lt;path d=&quot;M87.477 42.738H12.523L50 5.262zM12.523 59.262h74.954L50 96.738z&quot;&gt;&lt;/path&gt;
+                                    &lt;/svg&gt;
+                                &lt;/button&gt;&lt;/span&gt;&lt;/th&gt;
+                        &lt;th class=&quot;af-table__th af-table__th--sortable&quot;&gt;&lt;span class=&quot;af-table__th-content&quot;&gt;
+                                &lt;button class=&quot;af-btn af-btn--table-sorting&quot; role=&quot;button&quot;&gt;Date de mise à jour
+                                    &lt;svg class=&quot;glyphicon glyphicon-sorting&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 100 100&quot;&gt;
+                                        &lt;path d=&quot;M87.477 42.738H12.523L50 5.262zM12.523 59.262h74.954L50 96.738z&quot;&gt;&lt;/path&gt;
+                                    &lt;/svg&gt;
+                                &lt;/button&gt;&lt;/span&gt;&lt;/th&gt;
+                        &lt;th class=&quot;af-table__th af-table__th--sortable&quot;&gt;&lt;span class=&quot;af-table__th-content&quot;&gt;
+                                &lt;button class=&quot;af-btn af-btn--table-sorting&quot; role=&quot;button&quot;&gt;Décision
+                                    &lt;svg class=&quot;glyphicon glyphicon-sorting&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 100 100&quot;&gt;
+                                        &lt;path d=&quot;M87.477 42.738H12.523L50 5.262zM12.523 59.262h74.954L50 96.738z&quot;&gt;&lt;/path&gt;
+                                    &lt;/svg&gt;
+                                &lt;/button&gt;&lt;/span&gt;&lt;/th&gt;
+                        &lt;th class=&quot;af-table__th af-table__th--sortable&quot;&gt;&lt;span class=&quot;af-table__th-content&quot;&gt;
+                                &lt;button class=&quot;af-btn af-btn--table-sorting&quot; role=&quot;button&quot;&gt;Statut du dossier
+                                    &lt;svg class=&quot;glyphicon glyphicon-sorting&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 100 100&quot;&gt;
+                                        &lt;path d=&quot;M87.477 42.738H12.523L50 5.262zM12.523 59.262h74.954L50 96.738z&quot;&gt;&lt;/path&gt;
+                                    &lt;/svg&gt;
+                                &lt;/button&gt;&lt;/span&gt;&lt;/th&gt;
+                        &lt;th class=&quot;af-table__th&quot;&gt;&lt;span class=&quot;af-table__th-content&quot;&gt;Action&lt;/span&gt;&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody class=&quot;af-table__body&quot;&gt;
+                    &lt;tr class=&quot;af-table__tr&quot;&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;25487696&lt;/a&gt;&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;1594458644&lt;/a&gt;&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;7359&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;BellBoeuf&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;01/03/2017&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;Acceptation totale&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;
+                            &lt;div class=&quot;af-status&quot;&gt;&lt;span class=&quot;glyphicon-ring glyphicon-ring--banque&quot;&gt;
+                                    &lt;svg class=&quot;glyphicon glyphicon-option-horizontal&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 100 100&quot;&gt;
+                                        &lt;path d=&quot;M14.152,36.557c3.705,0,6.869,1.314,9.501,3.939c2.633,2.633,3.945,5.796,3.941,9.505
+	c-0.002,3.702-1.315,6.873-3.941,9.499c-2.625,2.628-5.792,3.944-9.501,3.944c-3.708,0-6.876-1.316-9.502-3.944
+	c-2.626-2.626-3.938-5.797-3.941-9.499c-0.003-3.709,1.31-6.872,3.941-9.505C7.282,37.871,10.446,36.557,14.152,36.557z
+	 M49.999,36.557c3.705,0,6.869,1.314,9.501,3.939c2.633,2.633,3.945,5.796,3.941,9.505c-0.002,3.702-1.316,6.873-3.941,9.499
+	c-2.625,2.628-5.793,3.944-9.501,3.944c-3.709,0-6.876-1.316-9.502-3.944c-2.625-2.626-3.938-5.797-3.941-9.499
+	c-0.004-3.709,1.31-6.872,3.941-9.505C43.129,37.871,46.293,36.557,49.999,36.557z M85.85,36.557c3.701,0,6.871,1.314,9.5,3.939
+	c2.629,2.633,3.941,5.796,3.941,9.505c0,3.702-1.316,6.873-3.941,9.499c-2.625,2.628-5.793,3.944-9.5,3.944
+	c-3.709,0-6.877-1.316-9.502-3.944c-2.627-2.626-3.943-5.797-3.943-9.499c0-3.709,1.314-6.872,3.943-9.505
+	C78.975,37.871,82.146,36.557,85.85,36.557z&quot;&gt;&lt;/path&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;En cours
+                            &lt;/div&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link af-link--hasIconLeft&quot; href=&quot;#&quot;&gt;
+                                &lt;svg class=&quot;glyphicon glyphicon-pencil&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 106 100&quot;&gt;
+                                    &lt;path d=&quot;M3.718 98.426l26.043-8.759-17.44-17.44zM19.359 65.892l16.736 16.736 48.019-48.019-16.736-16.736zM74.104 11.148l16.736 16.736 7.742-7.195q1.017-1.017 1.017-2.542t-1.017-2.62l-11.966-11.966q-1.173-1.017-2.581-1.017t-2.581 1.017z&quot;&gt;&lt;/path&gt;
+                                &lt;/svg&gt;&lt;span class=&quot;af-link__text&quot;&gt;Consulter&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr class=&quot;af-table__tr&quot;&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;25487296&lt;/a&gt;&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;1594458044&lt;/a&gt;&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;7059&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;Toulouse&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;01/06/2007&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;Acceptation partielle&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;
+                            &lt;div class=&quot;af-status&quot;&gt;&lt;span class=&quot;glyphicon-ring glyphicon-ring--warning&quot;&gt;
+                                    &lt;svg class=&quot;glyphicon glyphicon-arrowthin-right&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 100 100&quot;&gt;
+                                        &lt;path d=&quot;M5.6,57.8l-0.2,0h66.9l-21,21.1c-1,1-1.6,2.4-1.6,3.9s0.6,2.8,1.6,3.9l3.3,3.3c1,1,2.4,1.6,3.9,1.6s2.8-0.6,3.9-1.6
+		l36.1-36.1c1-1,1.6-2.4,1.6-3.9c0-1.5-0.6-2.8-1.6-3.9L62.3,10.1c-1-1-2.4-1.6-3.9-1.6s-2.8,0.6-3.9,1.6l-3.3,3.3
+		c-1,1-1.6,2.4-1.6,3.9c0,1.5,0.6,2.8,1.6,3.8l21.3,21.2H5.5c-3,0-5.5,2.6-5.5,5.6l0,4.6C0,55.4,2.6,57.8,5.6,57.8z&quot;&gt;&lt;/path&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;Transmis
+                            &lt;/div&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link af-link--hasIconLeft&quot; href=&quot;#&quot;&gt;
+                                &lt;svg class=&quot;glyphicon glyphicon-pencil&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 106 100&quot;&gt;
+                                    &lt;path d=&quot;M3.718 98.426l26.043-8.759-17.44-17.44zM19.359 65.892l16.736 16.736 48.019-48.019-16.736-16.736zM74.104 11.148l16.736 16.736 7.742-7.195q1.017-1.017 1.017-2.542t-1.017-2.62l-11.966-11.966q-1.173-1.017-2.581-1.017t-2.581 1.017z&quot;&gt;&lt;/path&gt;
+                                &lt;/svg&gt;&lt;span class=&quot;af-link__text&quot;&gt;Consulter&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr class=&quot;af-table__tr&quot;&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;22487296&lt;/a&gt;&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;1594428044&lt;/a&gt;&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;7052&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;NA&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;11/06/2000&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;Refus&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;
+                            &lt;div class=&quot;af-status&quot;&gt;&lt;span class=&quot;glyphicon-ring glyphicon-ring--success&quot;&gt;
+                                    &lt;svg class=&quot;glyphicon glyphicon-ok&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 105 100&quot;&gt;
+                                        &lt;path d=&quot;M0.854 57.792l34.917 35 68.167-68.333-17.667-17.667-50.583 50.583-17.167-17.25z&quot;&gt;&lt;/path&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;Clos
+                            &lt;/div&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link af-link--hasIconLeft&quot; href=&quot;#&quot;&gt;
+                                &lt;svg class=&quot;glyphicon glyphicon-pencil&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 106 100&quot;&gt;
+                                    &lt;path d=&quot;M3.718 98.426l26.043-8.759-17.44-17.44zM19.359 65.892l16.736 16.736 48.019-48.019-16.736-16.736zM74.104 11.148l16.736 16.736 7.742-7.195q1.017-1.017 1.017-2.542t-1.017-2.62l-11.966-11.966q-1.173-1.017-2.581-1.017t-2.581 1.017z&quot;&gt;&lt;/path&gt;
+                                &lt;/svg&gt;&lt;span class=&quot;af-link__text&quot;&gt;Consulter&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr class=&quot;af-table__tr&quot;&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;25487696&lt;/a&gt;&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;1594458644&lt;/a&gt;&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;7359&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;BellBoeuf&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;01/03/2017&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;Acceptation totale&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;
+                            &lt;div class=&quot;af-status&quot;&gt;&lt;span class=&quot;glyphicon-ring glyphicon-ring--banque&quot;&gt;
+                                    &lt;svg class=&quot;glyphicon glyphicon-option-horizontal&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 100 100&quot;&gt;
+                                        &lt;path d=&quot;M14.152,36.557c3.705,0,6.869,1.314,9.501,3.939c2.633,2.633,3.945,5.796,3.941,9.505
+	c-0.002,3.702-1.315,6.873-3.941,9.499c-2.625,2.628-5.792,3.944-9.501,3.944c-3.708,0-6.876-1.316-9.502-3.944
+	c-2.626-2.626-3.938-5.797-3.941-9.499c-0.003-3.709,1.31-6.872,3.941-9.505C7.282,37.871,10.446,36.557,14.152,36.557z
+	 M49.999,36.557c3.705,0,6.869,1.314,9.501,3.939c2.633,2.633,3.945,5.796,3.941,9.505c-0.002,3.702-1.316,6.873-3.941,9.499
+	c-2.625,2.628-5.793,3.944-9.501,3.944c-3.709,0-6.876-1.316-9.502-3.944c-2.625-2.626-3.938-5.797-3.941-9.499
+	c-0.004-3.709,1.31-6.872,3.941-9.505C43.129,37.871,46.293,36.557,49.999,36.557z M85.85,36.557c3.701,0,6.871,1.314,9.5,3.939
+	c2.629,2.633,3.941,5.796,3.941,9.505c0,3.702-1.316,6.873-3.941,9.499c-2.625,2.628-5.793,3.944-9.5,3.944
+	c-3.709,0-6.877-1.316-9.502-3.944c-2.627-2.626-3.943-5.797-3.943-9.499c0-3.709,1.314-6.872,3.943-9.505
+	C78.975,37.871,82.146,36.557,85.85,36.557z&quot;&gt;&lt;/path&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;En cours
+                            &lt;/div&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link af-link--hasIconLeft&quot; href=&quot;#&quot;&gt;
+                                &lt;svg class=&quot;glyphicon glyphicon-pencil&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 106 100&quot;&gt;
+                                    &lt;path d=&quot;M3.718 98.426l26.043-8.759-17.44-17.44zM19.359 65.892l16.736 16.736 48.019-48.019-16.736-16.736zM74.104 11.148l16.736 16.736 7.742-7.195q1.017-1.017 1.017-2.542t-1.017-2.62l-11.966-11.966q-1.173-1.017-2.581-1.017t-2.581 1.017z&quot;&gt;&lt;/path&gt;
+                                &lt;/svg&gt;&lt;span class=&quot;af-link__text&quot;&gt;Consulter&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr class=&quot;af-table__tr&quot;&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;25487296&lt;/a&gt;&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;1594458044&lt;/a&gt;&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;7059&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;Toulouse&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;01/06/2007&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;Acceptation partielle&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;
+                            &lt;div class=&quot;af-status&quot;&gt;&lt;span class=&quot;glyphicon-ring glyphicon-ring--warning&quot;&gt;
+                                    &lt;svg class=&quot;glyphicon glyphicon-arrowthin-right&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 100 100&quot;&gt;
+                                        &lt;path d=&quot;M5.6,57.8l-0.2,0h66.9l-21,21.1c-1,1-1.6,2.4-1.6,3.9s0.6,2.8,1.6,3.9l3.3,3.3c1,1,2.4,1.6,3.9,1.6s2.8-0.6,3.9-1.6
+		l36.1-36.1c1-1,1.6-2.4,1.6-3.9c0-1.5-0.6-2.8-1.6-3.9L62.3,10.1c-1-1-2.4-1.6-3.9-1.6s-2.8,0.6-3.9,1.6l-3.3,3.3
+		c-1,1-1.6,2.4-1.6,3.9c0,1.5,0.6,2.8,1.6,3.8l21.3,21.2H5.5c-3,0-5.5,2.6-5.5,5.6l0,4.6C0,55.4,2.6,57.8,5.6,57.8z&quot;&gt;&lt;/path&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;Transmis
+                            &lt;/div&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link af-link--hasIconLeft&quot; href=&quot;#&quot;&gt;
+                                &lt;svg class=&quot;glyphicon glyphicon-pencil&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 106 100&quot;&gt;
+                                    &lt;path d=&quot;M3.718 98.426l26.043-8.759-17.44-17.44zM19.359 65.892l16.736 16.736 48.019-48.019-16.736-16.736zM74.104 11.148l16.736 16.736 7.742-7.195q1.017-1.017 1.017-2.542t-1.017-2.62l-11.966-11.966q-1.173-1.017-2.581-1.017t-2.581 1.017z&quot;&gt;&lt;/path&gt;
+                                &lt;/svg&gt;&lt;span class=&quot;af-link__text&quot;&gt;Consulter&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr class=&quot;af-table__tr&quot;&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;22487296&lt;/a&gt;&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;1594428044&lt;/a&gt;&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;7052&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;NA&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;11/06/2000&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;Refus&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;
+                            &lt;div class=&quot;af-status&quot;&gt;&lt;span class=&quot;glyphicon-ring glyphicon-ring--success&quot;&gt;
+                                    &lt;svg class=&quot;glyphicon glyphicon-ok&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 105 100&quot;&gt;
+                                        &lt;path d=&quot;M0.854 57.792l34.917 35 68.167-68.333-17.667-17.667-50.583 50.583-17.167-17.25z&quot;&gt;&lt;/path&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;Clos
+                            &lt;/div&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link af-link--hasIconLeft&quot; href=&quot;#&quot;&gt;
+                                &lt;svg class=&quot;glyphicon glyphicon-pencil&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 106 100&quot;&gt;
+                                    &lt;path d=&quot;M3.718 98.426l26.043-8.759-17.44-17.44zM19.359 65.892l16.736 16.736 48.019-48.019-16.736-16.736zM74.104 11.148l16.736 16.736 7.742-7.195q1.017-1.017 1.017-2.542t-1.017-2.62l-11.966-11.966q-1.173-1.017-2.581-1.017t-2.581 1.017z&quot;&gt;&lt;/path&gt;
+                                &lt;/svg&gt;&lt;span class=&quot;af-link__text&quot;&gt;Consulter&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr class=&quot;af-table__tr&quot;&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;25487696&lt;/a&gt;&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;1594458644&lt;/a&gt;&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;7359&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;BellBoeuf&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;01/03/2017&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;Acceptation totale&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;
+                            &lt;div class=&quot;af-status&quot;&gt;&lt;span class=&quot;glyphicon-ring glyphicon-ring--banque&quot;&gt;
+                                    &lt;svg class=&quot;glyphicon glyphicon-option-horizontal&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 100 100&quot;&gt;
+                                        &lt;path d=&quot;M14.152,36.557c3.705,0,6.869,1.314,9.501,3.939c2.633,2.633,3.945,5.796,3.941,9.505
+	c-0.002,3.702-1.315,6.873-3.941,9.499c-2.625,2.628-5.792,3.944-9.501,3.944c-3.708,0-6.876-1.316-9.502-3.944
+	c-2.626-2.626-3.938-5.797-3.941-9.499c-0.003-3.709,1.31-6.872,3.941-9.505C7.282,37.871,10.446,36.557,14.152,36.557z
+	 M49.999,36.557c3.705,0,6.869,1.314,9.501,3.939c2.633,2.633,3.945,5.796,3.941,9.505c-0.002,3.702-1.316,6.873-3.941,9.499
+	c-2.625,2.628-5.793,3.944-9.501,3.944c-3.709,0-6.876-1.316-9.502-3.944c-2.625-2.626-3.938-5.797-3.941-9.499
+	c-0.004-3.709,1.31-6.872,3.941-9.505C43.129,37.871,46.293,36.557,49.999,36.557z M85.85,36.557c3.701,0,6.871,1.314,9.5,3.939
+	c2.629,2.633,3.941,5.796,3.941,9.505c0,3.702-1.316,6.873-3.941,9.499c-2.625,2.628-5.793,3.944-9.5,3.944
+	c-3.709,0-6.877-1.316-9.502-3.944c-2.627-2.626-3.943-5.797-3.943-9.499c0-3.709,1.314-6.872,3.943-9.505
+	C78.975,37.871,82.146,36.557,85.85,36.557z&quot;&gt;&lt;/path&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;En cours
+                            &lt;/div&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link af-link--hasIconLeft&quot; href=&quot;#&quot;&gt;
+                                &lt;svg class=&quot;glyphicon glyphicon-pencil&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 106 100&quot;&gt;
+                                    &lt;path d=&quot;M3.718 98.426l26.043-8.759-17.44-17.44zM19.359 65.892l16.736 16.736 48.019-48.019-16.736-16.736zM74.104 11.148l16.736 16.736 7.742-7.195q1.017-1.017 1.017-2.542t-1.017-2.62l-11.966-11.966q-1.173-1.017-2.581-1.017t-2.581 1.017z&quot;&gt;&lt;/path&gt;
+                                &lt;/svg&gt;&lt;span class=&quot;af-link__text&quot;&gt;Consulter&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr class=&quot;af-table__tr&quot;&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;25487296&lt;/a&gt;&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;1594458044&lt;/a&gt;&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;7059&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;Toulouse&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;01/06/2007&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;Acceptation partielle&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;
+                            &lt;div class=&quot;af-status&quot;&gt;&lt;span class=&quot;glyphicon-ring glyphicon-ring--warning&quot;&gt;
+                                    &lt;svg class=&quot;glyphicon glyphicon-arrowthin-right&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 100 100&quot;&gt;
+                                        &lt;path d=&quot;M5.6,57.8l-0.2,0h66.9l-21,21.1c-1,1-1.6,2.4-1.6,3.9s0.6,2.8,1.6,3.9l3.3,3.3c1,1,2.4,1.6,3.9,1.6s2.8-0.6,3.9-1.6
+		l36.1-36.1c1-1,1.6-2.4,1.6-3.9c0-1.5-0.6-2.8-1.6-3.9L62.3,10.1c-1-1-2.4-1.6-3.9-1.6s-2.8,0.6-3.9,1.6l-3.3,3.3
+		c-1,1-1.6,2.4-1.6,3.9c0,1.5,0.6,2.8,1.6,3.8l21.3,21.2H5.5c-3,0-5.5,2.6-5.5,5.6l0,4.6C0,55.4,2.6,57.8,5.6,57.8z&quot;&gt;&lt;/path&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;Transmis
+                            &lt;/div&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link af-link--hasIconLeft&quot; href=&quot;#&quot;&gt;
+                                &lt;svg class=&quot;glyphicon glyphicon-pencil&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 106 100&quot;&gt;
+                                    &lt;path d=&quot;M3.718 98.426l26.043-8.759-17.44-17.44zM19.359 65.892l16.736 16.736 48.019-48.019-16.736-16.736zM74.104 11.148l16.736 16.736 7.742-7.195q1.017-1.017 1.017-2.542t-1.017-2.62l-11.966-11.966q-1.173-1.017-2.581-1.017t-2.581 1.017z&quot;&gt;&lt;/path&gt;
+                                &lt;/svg&gt;&lt;span class=&quot;af-link__text&quot;&gt;Consulter&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr class=&quot;af-table__tr&quot;&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;22487296&lt;/a&gt;&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;1594428044&lt;/a&gt;&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;7052&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;NA&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;11/06/2000&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;Refus&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;
+                            &lt;div class=&quot;af-status&quot;&gt;&lt;span class=&quot;glyphicon-ring glyphicon-ring--success&quot;&gt;
+                                    &lt;svg class=&quot;glyphicon glyphicon-ok&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 105 100&quot;&gt;
+                                        &lt;path d=&quot;M0.854 57.792l34.917 35 68.167-68.333-17.667-17.667-50.583 50.583-17.167-17.25z&quot;&gt;&lt;/path&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;Clos
+                            &lt;/div&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link af-link--hasIconLeft&quot; href=&quot;#&quot;&gt;
+                                &lt;svg class=&quot;glyphicon glyphicon-pencil&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 106 100&quot;&gt;
+                                    &lt;path d=&quot;M3.718 98.426l26.043-8.759-17.44-17.44zM19.359 65.892l16.736 16.736 48.019-48.019-16.736-16.736zM74.104 11.148l16.736 16.736 7.742-7.195q1.017-1.017 1.017-2.542t-1.017-2.62l-11.966-11.966q-1.173-1.017-2.581-1.017t-2.581 1.017z&quot;&gt;&lt;/path&gt;
+                                &lt;/svg&gt;&lt;span class=&quot;af-link__text&quot;&gt;Consulter&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr class=&quot;af-table__tr&quot;&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;25487296&lt;/a&gt;&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;1594458044&lt;/a&gt;&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;7059&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;Toulouse&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;01/06/2007&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;Acceptation partielle&lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;
+                            &lt;div class=&quot;af-status&quot;&gt;&lt;span class=&quot;glyphicon-ring glyphicon-ring--warning&quot;&gt;
+                                    &lt;svg class=&quot;glyphicon glyphicon-arrowthin-right&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 100 100&quot;&gt;
+                                        &lt;path d=&quot;M5.6,57.8l-0.2,0h66.9l-21,21.1c-1,1-1.6,2.4-1.6,3.9s0.6,2.8,1.6,3.9l3.3,3.3c1,1,2.4,1.6,3.9,1.6s2.8-0.6,3.9-1.6
+		l36.1-36.1c1-1,1.6-2.4,1.6-3.9c0-1.5-0.6-2.8-1.6-3.9L62.3,10.1c-1-1-2.4-1.6-3.9-1.6s-2.8,0.6-3.9,1.6l-3.3,3.3
+		c-1,1-1.6,2.4-1.6,3.9c0,1.5,0.6,2.8,1.6,3.8l21.3,21.2H5.5c-3,0-5.5,2.6-5.5,5.6l0,4.6C0,55.4,2.6,57.8,5.6,57.8z&quot;&gt;&lt;/path&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;Transmis
+                            &lt;/div&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link af-link--hasIconLeft&quot; href=&quot;#&quot;&gt;
+                                &lt;svg class=&quot;glyphicon glyphicon-pencil&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 106 100&quot;&gt;
+                                    &lt;path d=&quot;M3.718 98.426l26.043-8.759-17.44-17.44zM19.359 65.892l16.736 16.736 48.019-48.019-16.736-16.736zM74.104 11.148l16.736 16.736 7.742-7.195q1.017-1.017 1.017-2.542t-1.017-2.62l-11.966-11.966q-1.173-1.017-2.581-1.017t-2.581 1.017z&quot;&gt;&lt;/path&gt;
+                                &lt;/svg&gt;&lt;span class=&quot;af-link__text&quot;&gt;Consulter&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;div class=&quot;af-paging&quot;&gt;
+                &lt;div class=&quot;af-paging__limit&quot;&gt;
+                    &lt;form class=&quot;af-paging__form&quot;&gt;
+                        &lt;div class=&quot;af-form__group&quot;&gt;
+                            &lt;div class=&quot;col col-sm-2 col-md-2 col-lg-2 col-xl-2&quot;&gt;
+                                &lt;label class=&quot;af-form__group-label&quot; for=&quot;pagination&quot;&gt;Afficher&lt;/label&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;col col-sm-10 col-md-10 col-lg-10 col-xl-10&quot;&gt;
+                                &lt;div class=&quot;af-form__select&quot;&gt;
+                                    &lt;div class=&quot;af-form__select-container&quot;&gt;
+                                        &lt;select class=&quot;af-form__input-select&quot;&gt;
+                                            &lt;option value=&quot;5&quot;&gt;5&lt;/option&gt;
+                                            &lt;option value=&quot;10&quot;&gt;10&lt;/option&gt;
+                                            &lt;option value=&quot;15&quot;&gt;15&lt;/option&gt;
+                                            &lt;option value=&quot;20&quot;&gt;20&lt;/option&gt;
+                                        &lt;/select&gt;
+                                        &lt;svg class=&quot;glyphicon glyphicon-menu-down&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 100 100&quot;&gt;
+                                            &lt;path d=&quot;M98.4,16.2c0.7,0.3,1.1,1,1.1,2.1v15.9c0,0.9-0.3,1.6-0.9,2.3L51.8,83.2c-0.5,0.5-1.1,0.7-1.8,0.7
+	s-1.3-0.2-1.8-0.7L1.4,36.5c-0.6-0.7-0.9-1.4-0.9-2.3V18.3c0-1.1,0.4-1.8,1.1-2.1c0.7-0.3,1.5-0.1,2.3,0.7L50,63l46.1-46.1
+	C96.9,16.1,97.6,15.9,98.4,16.2L98.4,16.2z&quot;&gt;&lt;/path&gt;
+                                        &lt;/svg&gt;
+                                    &lt;/div&gt;&lt;span class=&quot;af-form__input-cmplt&quot;&gt;éléments&lt;/span&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/form&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;af-paging__pager&quot;&gt;
+                    &lt;nav class=&quot;af-pager&quot;&gt;
+                        &lt;ul class=&quot;af-pager__pagination&quot;&gt;
+                            &lt;li class=&quot;af-pager__item&quot;&gt;&lt;a class=&quot;af-pager__item-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;af-pager__item-icon&quot;&gt;&amp;laquo;&lt;/span&gt;&lt;span class=&quot;af-pager__item-text&quot;&gt;Pr&amp;eacute;c&amp;eacute;dent&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=&quot;af-pager__item&quot;&gt;&lt;a class=&quot;af-pager__item-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=&quot;af-pager__item af-pager__item--disabled&quot;&gt;&lt;span class=&quot;af-pager__item-link&quot;&gt;...&lt;/span&gt;&lt;/li&gt;
+                            &lt;li class=&quot;af-pager__item&quot;&gt;&lt;a class=&quot;af-pager__item-link&quot; href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=&quot;af-pager__item af-pager__item--active&quot;&gt;&lt;a class=&quot;af-pager__item-link&quot; href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=&quot;af-pager__item&quot;&gt;&lt;a class=&quot;af-pager__item-link&quot; href=&quot;#&quot;&gt;6&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=&quot;af-pager__item af-pager__item--disabled&quot;&gt;...&lt;/li&gt;
+                            &lt;li class=&quot;af-pager__item&quot;&gt;&lt;a class=&quot;af-pager__item-link&quot; href=&quot;#&quot;&gt;23&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=&quot;af-pager__item&quot;&gt;&lt;a class=&quot;af-pager__item-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;af-pager__item-text&quot;&gt;Suivant&lt;/span&gt;&lt;span class=&quot;af-pager__item-icon&quot;&gt;&amp;raquo;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/nav&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;footer class=&quot;af-footer&quot;&gt;
+    &lt;div class=&quot;af-container&quot;&gt;&lt;a class=&quot;af-logo&quot; href=&quot;https://www.axa.fr/&quot; title=&quot;Site Axa France&quot; target=&quot;blank&quot;&gt;&lt;img class=&quot;af-logo__brand&quot; src=&quot;../../assets/images/slash-logo.svg&quot; alt=&quot;Logo Slash Design System&quot; /&gt;&lt;/a&gt;
+        &lt;div class=&quot;af-footer-content&quot;&gt;@ 2020 AXA Tous droits réservés&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/footer&gt;</code></pre></div></div></div></section><section class="tk-tabs__content-item js-tabs__content-item" data-id="tabs__content-item--12" role="tabpanel"><div class="tk-code__wrapper-outer"><div class="tk-code__wrapper-middle"><div class="tk-code__wrapper-inner"><div class="tk-code__icon"><svg class="tk-icon  tk-icon--copy " viewbox="0 0 36 36" width="36" height="36"><use xlink:href="#copy"></use></svg><span class="tk-code__icon-text">Copied</span></div><pre class="pre"><code class="css">No style</code></pre></div></div></div></section><section class="tk-tabs__content-item js-tabs__content-item" data-id="tabs__content-item--13" role="tabpanel"><iframe class="tk-demo__iframe" src="https://axaguildev.github.io/react-toolkit/latest/storybook/iframe.html?id=form-demo-statefull--form-with-recompose"></iframe></section></article></div></article></section><section id="pageguidelines"><h1 class="tk-title  tk-title--page">Generales Guidelines</h1><article class="tk-markdown"><h2>Tone of voice</h2>
 <p>Quapropter a natura mihi <strong>bold</strong> potius quam ab indigentia orta amicitia, applicatione magis animi cum quodam sensu amandi quam cogitatione quantum illa res utilitatis esset habitura. Quod quidem quale sit, <a href="http://google.com">link to Google!</a> quibusdam animadverti potest, quae ex se <em>italic</em> ita amant ad quoddam tempus et ab eis ita amantur ut facile earum sensus appareat.</p>
 <ul>
 <li>Quapropter a natura mihi videtur potius quam ab</li>
@@ -50,630 +965,7 @@
 </ul>
 <h2>Danger version usage</h2>
 <p>Danger ... Inter has ruinarum varietates a Nisibi quam tuebatur accitus Vrsicinus, cui nos obsecuturos iunxerat imperiale praeceptum, dispicere litis exitialis certamina cogebatur abnuens et reclamans, adulatorum oblatrantibus turmis, bellicosus sane milesque semper et militum ductor sed forensibus iurgiis longe discretus, qui metu sui discriminis anxius cum accusatores quaesitoresque subditivos sibi consociatos ex isdem foveis cerneret emergentes, quae clam palamve agitabantur, occultis Constantium litteris edocebat inplorans subsidia, quorum metu tumor notissimus Caesaris exhalaret.</p>
-</article></section><section id="pagecode"><h1 class="tk-title  tk-title--page">Source Code</h1><article class="tk-demo  tk-demo--pagetable js-demo  js-demo--pagetable"><h2 class="tk-title  tk-title--demo">Sample Table</h2><div class="tk-demo__display"><svg class="tk-icon  tk-icon--demo-open js-icon  js-icon--demo-open " viewbox="0 0 36 36" width="36" height="36"><use xlink:href="#full-screen"></use></svg><svg class="tk-icon  tk-icon--demo-close js-icon  js-icon--demo-close " viewbox="0 0 36 36" width="36" height="36"><use xlink:href="#cross-full"></use></svg><div class="tk-demo__template">
-<div class="af-header">
-  <div class="af-container af-header__wrapper">
-    <header class="af-header__content" role="banner">
-      <div class="af-header__name"><a class="af-logo" href="/"><img class="af-logo__brand" src="../../assets/images/slash-logo.svg" alt="Logo Slash Design System"/></a>
-        <h2 class="af-header__title">Nom de l&apos;application<small class="af-header__subtitle">Baseline</small></h2>
-      </div>
-      <div class="af-contrat"><i class="glyphicon glyphicon-info-sign"></i>
-        <dl class="af-contrat__list">
-          <dt class="af-contrat__word">Client :</dt>
-          <dd class="af-contrat__def">0123456789 - NOM</dd>
-          <dt class="af-contrat__word">Portefeuille :</dt>
-          <dd class="af-contrat__def">000123456789</dd>
-          <dt class="af-contrat__word">Status :</dt>
-          <dd class="af-contrat__def">Affaire nouvelle</dd>
-        </dl>
-      </div>
-      <div class="af-info-user"><a class="af-info-user__link" href="/profile" title="Voir mon profil"><span class="af-info-user__name">Pierre Martin</span><span class="af-info-user__profile">[Profile]</span></a></div>
-    </header>
-  </div>
-</div>
-<div class="af-nav-container">
-  <button class="mask fade show" type="button"></button>
-  <nav class="af-nav af-drawer left show" role="navigation" aria-label="Menu principal">
-    <div class="af-container af-nav__wrapper">
-      <div class="af-nav__aside-header">
-        <h4 class="af-nav__aside-title">Menu</h4><a class="af-nav__aside-close" href="#" role="button" aria-haspopup="true" aria-controls="idmenu" id="menubutton">×</a>
-      </div>
-      <ul class="af-nav__list" role="menubar" aria-labelledby="menubutton" id="idmenu">
-        <li class="af-nav__item af-nav__item--active" role="none"><a class="af-nav__link" role="menuitem" href="/home" tabindex="0">Home</a>
-        </li>
-        <li class="af-nav__item" role="none"><a class="af-nav__link" role="menuitem" href="/form" tabindex="-1">Forms</a>
-        </li>
-        <li class="af-nav__item" role="none"><a class="af-nav__link" role="menuitem" href="/fileupload" tabindex="-1">Fileupload</a>
-        </li>
-        <li class="af-nav__item" role="none"><a class="af-nav__link" role="menuitem" href="/table" tabindex="-1">Table</a>
-        </li>
-        <li class="af-nav__item" role="none"><a class="af-nav__link" role="menuitem" href="/collapse" tabindex="-1">Accordions</a>
-        </li>
-        <li class="af-nav__item" role="none"><a class="af-nav__link" role="menuitem" href="/table" tabindex="-1"> Drag n drop</a>
-        </li>
-        <li class="af-nav__item" role="none"><a class="af-nav__link" role="menuitem" href="/alert" tabindex="-1">Alerts</a>
-        </li>
-        <li class="af-nav__item" role="none"><a class="af-nav__link" role="menuitem" href="/contributing" tabindex="-1">Validation</a>
-        </li>
-        <li class="af-nav__item af-nav__item--haschild" role="none"><a class="af-nav__link" role="menuitem" href="/doc" tabindex="-1" aria-haspopup="aria-haspopup" aria-expanded="aria-expanded">Doc</a><i class="glyphicon glyphicon-arrow-xs-down"></i>
-          <ul class="af-nav__list af-nav__list--children" role="menu" aria-label="Doc">
-            <li class="af-nav__item" role="none"><a class="af-nav__link" role="menuitem" href="/doc/sous-lien" tabindex="-1">Sous lien</a></li>
-            <li class="af-nav__item" role="none"><a class="af-nav__link" role="menuitem" href="/doc/sous-lien2" tabindex="-1">Sous lien 2</a></li>
-            <li class="af-nav__item" role="none"><a class="af-nav__link" role="menuitem" href="/doc/sous-lien3" tabindex="-1">Sous lien 3</a></li>
-            <li class="af-nav__item" role="none"><a class="af-nav__link" role="menuitem" href="/doc/sous-lien4" tabindex="-1">Sous lien 4</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</div>
-<div class="af-title-bar">
-  <div class="af-title-bar__wrapper af-container">
-    <button class="af-btn-circle af-title-bar__mobile-menu">
-      <div class="af-btn__wrapper"><i class="af-title-bar__icon glyphicon glyphicon-menu-hamburger"></i></div>
-    </button>
-    <h1 class="af-title-bar__title">Slash Design System<small class="af-title-bar__subtitle">Sous titre</small></h1>
-    <div class="af-title-bar__actions"><a class="af-title-bar__link" href="#lien" title="lien titlebar">lien titlebar</a><a class="af-btn--circle" href="#enregistrer" title="Enregistrer" role="button" tabindex="0"><i class="glyphicon glyphicon-floppy-disk"></i></a><a class="af-btn--circle" href="#imprimer" title="Imprimer" role="button" tabindex="0"><i class="glyphicon glyphicon-print"></i></a></div>
-  </div>
-</div>
-<div class="af-container">
-  <div class="row">
-    <div class="col col-md-12">
-      <div class="af-steps">
-        <ol class="af-steps-list">
-          <li class="af-steps-list-step past" title="Etape 1">
-            <div class="af-steps-list-stepLabel">
-              <div class="af-steps-list-stepNumber">1</div>
-              <div class="af-steps-list-stepTitle">Previous step</div>
-            </div>
-          </li>
-          <li class="af-steps-list-step past" title="Etape 2">
-            <div class="af-steps-list-stepLabel">
-              <div class="af-steps-list-stepNumber">2</div>
-              <div class="af-steps-list-stepTitle">Previous step</div>
-            </div>
-          </li>
-          <li class="af-steps-list-step on" title="Etape 3">
-            <div class="af-steps-list-stepLabel">
-              <div class="af-steps-list-stepNumber">3</div>
-              <div class="af-steps-list-stepTitle">Current step</div>
-            </div>
-          </li>
-          <li class="af-steps-list-step" title="Etape 3">
-            <div class="af-steps-list-stepLabel">
-              <div class="af-steps-list-stepNumber">4</div>
-              <div class="af-steps-list-stepTitle">Next step</div>
-            </div>
-          </li>
-          <li class="af-steps-list-step" title="Etape finale">
-            <div class="af-steps-list-stepLabel">
-              <div class="af-steps-list-stepNumber"> <i class="glyphicon glyphicon-ok"></i></div>
-              <div class="af-steps-list-stepTitle">Confirmation</div>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col col-sm-12 col-md-12 col-lg-12 col-xl-12">
-      <table class="af-table">
-        <thead class="af-table__thead">
-          <tr class="af-table__tr">
-                  <th class="af-table__th af-table__th--sortable"><span class="af-table__th-content"> 
-                      <button class="af-btn af-btn--table-sorting af-btn--table-sorting--active" role="button">N° de contrat<span class="glyphicon glyphicon-arrow-xs-down"></span>
-                      </button></span></th>
-                  <th class="af-table__th af-table__th--sortable"><span class="af-table__th-content"> 
-                      <button class="af-btn af-btn--table-sorting" role="button">N° de dossier<span class="glyphicon glyphicon-sorting"></span>
-                      </button></span></th>
-                  <th class="af-table__th af-table__th--sortable"><span class="af-table__th-content"> 
-                      <button class="af-btn af-btn--table-sorting" role="button">N° de demande<span class="glyphicon glyphicon-sorting"></span>
-                      </button></span></th>
-                  <th class="af-table__th af-table__th--sortable"><span class="af-table__th-content"> 
-                      <button class="af-btn af-btn--table-sorting" role="button">Site<span class="glyphicon glyphicon-sorting"></span>
-                      </button></span></th>
-                  <th class="af-table__th af-table__th--sortable"><span class="af-table__th-content"> 
-                      <button class="af-btn af-btn--table-sorting" role="button">Date de mise à jour<span class="glyphicon glyphicon-sorting"></span>
-                      </button></span></th>
-                  <th class="af-table__th af-table__th--sortable"><span class="af-table__th-content"> 
-                      <button class="af-btn af-btn--table-sorting" role="button">Décision<span class="glyphicon glyphicon-sorting"></span>
-                      </button></span></th>
-                  <th class="af-table__th af-table__th--sortable"><span class="af-table__th-content"> 
-                      <button class="af-btn af-btn--table-sorting" role="button">Statut du dossier<span class="glyphicon glyphicon-sorting"></span>
-                      </button></span></th>
-                  <th class="af-table__th"><span class="af-table__th-content"> Action</span></th>
-          </tr>
-        </thead>
-        <tbody class="af-table__body">
-                <tr class="af-table__tr">
-                  <td class="af-table__cell"><a class="af-link" href="">25487696</a></td>
-                  <td class="af-table__cell"><a class="af-link" href="">1594458644</a></td>
-                  <td class="af-table__cell">7359</td>
-                  <td class="af-table__cell">BellBoeuf</td>
-                  <td class="af-table__cell">01/03/2017</td>
-                  <td class="af-table__cell">Acceptation totale</td>
-                  <td class="af-table__cell">
-                          <div class="af-status"><span class="glyphicon glyphicon--ring glyphicon--banque glyphicon-option-horizontal"></span>En cours
-                          </div>
-                  </td>
-                  <td class="af-table__cell"><a class="af-link af-link--hasIconLeft" href="#"><span class="glyphicon glyphicon-pencil"></span><span class="af-link__text">Consulter</span></a></td>
-                </tr>
-                <tr class="af-table__tr">
-                  <td class="af-table__cell"><a class="af-link" href="">25487296</a></td>
-                  <td class="af-table__cell"><a class="af-link" href="">1594458044</a></td>
-                  <td class="af-table__cell">7059</td>
-                  <td class="af-table__cell">Toulouse</td>
-                  <td class="af-table__cell">01/06/2007</td>
-                  <td class="af-table__cell">Acceptation partielle</td>
-                  <td class="af-table__cell">
-                          <div class="af-status"><span class="glyphicon glyphicon--ring glyphicon--warning glyphicon-arrowthin-right"></span>Transmis
-                          </div>
-                  </td>
-                  <td class="af-table__cell"><a class="af-link af-link--hasIconLeft" href="#"><span class="glyphicon glyphicon-pencil"></span><span class="af-link__text">Consulter</span></a></td>
-                </tr>
-                <tr class="af-table__tr">
-                  <td class="af-table__cell"><a class="af-link" href="">22487296</a></td>
-                  <td class="af-table__cell"><a class="af-link" href="">1594428044</a></td>
-                  <td class="af-table__cell">7052</td>
-                  <td class="af-table__cell">NA</td>
-                  <td class="af-table__cell">11/06/2000</td>
-                  <td class="af-table__cell">Refus</td>
-                  <td class="af-table__cell">
-                          <div class="af-status"><span class="glyphicon glyphicon--ring glyphicon--success glyphicon-ok"></span>Clos
-                          </div>
-                  </td>
-                  <td class="af-table__cell"><a class="af-link af-link--hasIconLeft" href="#"><span class="glyphicon glyphicon-pencil"></span><span class="af-link__text">Consulter</span></a></td>
-                </tr>
-                <tr class="af-table__tr">
-                  <td class="af-table__cell"><a class="af-link" href="">25487696</a></td>
-                  <td class="af-table__cell"><a class="af-link" href="">1594458644</a></td>
-                  <td class="af-table__cell">7359</td>
-                  <td class="af-table__cell">BellBoeuf</td>
-                  <td class="af-table__cell">01/03/2017</td>
-                  <td class="af-table__cell">Acceptation totale</td>
-                  <td class="af-table__cell">
-                          <div class="af-status"><span class="glyphicon glyphicon--ring glyphicon--banque glyphicon-option-horizontal"></span>En cours
-                          </div>
-                  </td>
-                  <td class="af-table__cell"><a class="af-link af-link--hasIconLeft" href="#"><span class="glyphicon glyphicon-pencil"></span><span class="af-link__text">Consulter</span></a></td>
-                </tr>
-                <tr class="af-table__tr">
-                  <td class="af-table__cell"><a class="af-link" href="">25487296</a></td>
-                  <td class="af-table__cell"><a class="af-link" href="">1594458044</a></td>
-                  <td class="af-table__cell">7059</td>
-                  <td class="af-table__cell">Toulouse</td>
-                  <td class="af-table__cell">01/06/2007</td>
-                  <td class="af-table__cell">Acceptation partielle</td>
-                  <td class="af-table__cell">
-                          <div class="af-status"><span class="glyphicon glyphicon--ring glyphicon--warning glyphicon-arrowthin-right"></span>Transmis
-                          </div>
-                  </td>
-                  <td class="af-table__cell"><a class="af-link af-link--hasIconLeft" href="#"><span class="glyphicon glyphicon-pencil"></span><span class="af-link__text">Consulter</span></a></td>
-                </tr>
-                <tr class="af-table__tr">
-                  <td class="af-table__cell"><a class="af-link" href="">22487296</a></td>
-                  <td class="af-table__cell"><a class="af-link" href="">1594428044</a></td>
-                  <td class="af-table__cell">7052</td>
-                  <td class="af-table__cell">NA</td>
-                  <td class="af-table__cell">11/06/2000</td>
-                  <td class="af-table__cell">Refus</td>
-                  <td class="af-table__cell">
-                          <div class="af-status"><span class="glyphicon glyphicon--ring glyphicon--success glyphicon-ok"></span>Clos
-                          </div>
-                  </td>
-                  <td class="af-table__cell"><a class="af-link af-link--hasIconLeft" href="#"><span class="glyphicon glyphicon-pencil"></span><span class="af-link__text">Consulter</span></a></td>
-                </tr>
-                <tr class="af-table__tr">
-                  <td class="af-table__cell"><a class="af-link" href="">25487696</a></td>
-                  <td class="af-table__cell"><a class="af-link" href="">1594458644</a></td>
-                  <td class="af-table__cell">7359</td>
-                  <td class="af-table__cell">BellBoeuf</td>
-                  <td class="af-table__cell">01/03/2017</td>
-                  <td class="af-table__cell">Acceptation totale</td>
-                  <td class="af-table__cell">
-                          <div class="af-status"><span class="glyphicon glyphicon--ring glyphicon--banque glyphicon-option-horizontal"></span>En cours
-                          </div>
-                  </td>
-                  <td class="af-table__cell"><a class="af-link af-link--hasIconLeft" href="#"><span class="glyphicon glyphicon-pencil"></span><span class="af-link__text">Consulter</span></a></td>
-                </tr>
-                <tr class="af-table__tr">
-                  <td class="af-table__cell"><a class="af-link" href="">25487296</a></td>
-                  <td class="af-table__cell"><a class="af-link" href="">1594458044</a></td>
-                  <td class="af-table__cell">7059</td>
-                  <td class="af-table__cell">Toulouse</td>
-                  <td class="af-table__cell">01/06/2007</td>
-                  <td class="af-table__cell">Acceptation partielle</td>
-                  <td class="af-table__cell">
-                          <div class="af-status"><span class="glyphicon glyphicon--ring glyphicon--warning glyphicon-arrowthin-right"></span>Transmis
-                          </div>
-                  </td>
-                  <td class="af-table__cell"><a class="af-link af-link--hasIconLeft" href="#"><span class="glyphicon glyphicon-pencil"></span><span class="af-link__text">Consulter</span></a></td>
-                </tr>
-                <tr class="af-table__tr">
-                  <td class="af-table__cell"><a class="af-link" href="">22487296</a></td>
-                  <td class="af-table__cell"><a class="af-link" href="">1594428044</a></td>
-                  <td class="af-table__cell">7052</td>
-                  <td class="af-table__cell">NA</td>
-                  <td class="af-table__cell">11/06/2000</td>
-                  <td class="af-table__cell">Refus</td>
-                  <td class="af-table__cell">
-                          <div class="af-status"><span class="glyphicon glyphicon--ring glyphicon--success glyphicon-ok"></span>Clos
-                          </div>
-                  </td>
-                  <td class="af-table__cell"><a class="af-link af-link--hasIconLeft" href="#"><span class="glyphicon glyphicon-pencil"></span><span class="af-link__text">Consulter</span></a></td>
-                </tr>
-                <tr class="af-table__tr">
-                  <td class="af-table__cell"><a class="af-link" href="">25487296</a></td>
-                  <td class="af-table__cell"><a class="af-link" href="">1594458044</a></td>
-                  <td class="af-table__cell">7059</td>
-                  <td class="af-table__cell">Toulouse</td>
-                  <td class="af-table__cell">01/06/2007</td>
-                  <td class="af-table__cell">Acceptation partielle</td>
-                  <td class="af-table__cell">
-                          <div class="af-status"><span class="glyphicon glyphicon--ring glyphicon--warning glyphicon-arrowthin-right"></span>Transmis
-                          </div>
-                  </td>
-                  <td class="af-table__cell"><a class="af-link af-link--hasIconLeft" href="#"><span class="glyphicon glyphicon-pencil"></span><span class="af-link__text">Consulter</span></a></td>
-                </tr>
-        </tbody>
-      </table>
-      <div class="af-paging">
-        <div class="af-paging__limit">
-          <form class="af-paging__form">
-            <div class="af-form__group">
-              <div class="col col-sm-2 col-md-2 col-lg-2 col-xl-2">
-                <label class="af-form__group-label" for="pagination">Afficher</label>
-              </div>
-              <div class="col col-sm-10 col-md-10 col-lg-10 col-xl-10">
-                <div class="af-form__select">
-                  <div class="af-form__select-container">
-                    <select class="af-form__input-select">
-                      <option value="5">5</option>
-                      <option value="10">10</option>
-                      <option value="15">15</option>
-                      <option value="20">20</option>
-                    </select><span class="glyphicon glyphicon-menu-down"></span>
-                  </div><span class="af-form__input-cmplt">éléments</span>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="af-paging__pager">
-          <nav class="af-pager">
-            <ul class="af-pager__pagination">
-              <li class="af-pager__item"><a class="af-pager__item-link" href="#"><span class="af-pager__item-icon">&laquo;</span><span class="af-pager__item-text">Pr&eacute;c&eacute;dent</span></a></li>
-              <li class="af-pager__item"><a class="af-pager__item-link" href="#">1</a></li>
-              <li class="af-pager__item af-pager__item--disabled"><span class="af-pager__item-link">...</span></li>
-              <li class="af-pager__item"><a class="af-pager__item-link" href="#">4</a></li>
-              <li class="af-pager__item af-pager__item--active"><a class="af-pager__item-link" href="#">5</a></li>
-              <li class="af-pager__item"><a class="af-pager__item-link" href="#">6</a></li>
-              <li class="af-pager__item af-pager__item--disabled">...</li>
-              <li class="af-pager__item"><a class="af-pager__item-link" href="#">23</a></li>
-              <li class="af-pager__item"><a class="af-pager__item-link" href="#"><span class="af-pager__item-text">Suivant</span><span class="af-pager__item-icon">&raquo;</span></a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<footer class="af-footer">
-  <div class="af-container"><a class="af-logo" href="https://www.axa.fr/" title="Site Axa France" target="blank"><img class="af-logo__brand" src="../../assets/images/slash-logo.svg" alt="Logo Slash Design System"/></a>
-    <div class="af-footer-content">@ 2020 AXA Tous droits réservés</div>
-  </div>
-</footer></div></div><div class="tk-tabs  tk-tabs--demo js-tabs  js-tabs--demo"><div class="tk-tabs__nav" role="tablist" aria-label="navigation"><button class="tk-tabs__nav-item  tk-tabs__nav-item--active js-tabs__nav-item  js-tabs__nav-item--active" data-nav-id="11" role="tab" tabindex="0" aria-selected="true" aria-controls="nav-tab"><span>HTML</span></button><button class="tk-tabs__nav-item js-tabs__nav-item" data-nav-id="12" role="tab" tabindex="-1" aria-selected="false" aria-controls="nav-tab"><span>SASS</span></button><button class="tk-tabs__nav-item js-tabs__nav-item" data-nav-id="13" role="tab" tabindex="-1" aria-selected="false" aria-controls="nav-tab"><span>REACT</span></button></div><article class="tk-tabs__content"><section class="tk-tabs__content-item  tk-tabs__content-item--active js-tabs__content-item  js-tabs__content-item--active" data-id="tabs__content-item--11" role="tabpanel"><div class="tk-code__wrapper-outer"><div class="tk-code__wrapper-middle"><div class="tk-code__wrapper-inner"><div class="tk-code__icon"><svg class="tk-icon  tk-icon--copy " viewbox="0 0 36 36" width="36" height="36"><use xlink:href="#copy"></use></svg><span class="tk-code__icon-text">Copied</span></div><pre class="pre"><code class="html">&lt;div class=&quot;af-header&quot;&gt;
-    &lt;div class=&quot;af-container af-header__wrapper&quot;&gt;
-        &lt;header class=&quot;af-header__content&quot; role=&quot;banner&quot;&gt;
-            &lt;div class=&quot;af-header__name&quot;&gt;&lt;a class=&quot;af-logo&quot; href=&quot;/&quot;&gt;&lt;img class=&quot;af-logo__brand&quot; src=&quot;../../assets/images/slash-logo.svg&quot; alt=&quot;Logo Slash Design System&quot; /&gt;&lt;/a&gt;
-                &lt;h2 class=&quot;af-header__title&quot;&gt;Nom de l&amp;apos;application&lt;small class=&quot;af-header__subtitle&quot;&gt;Baseline&lt;/small&gt;&lt;/h2&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;af-contrat&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-info-sign&quot;&gt;&lt;/i&gt;
-                &lt;dl class=&quot;af-contrat__list&quot;&gt;
-                    &lt;dt class=&quot;af-contrat__word&quot;&gt;Client :&lt;/dt&gt;
-                    &lt;dd class=&quot;af-contrat__def&quot;&gt;0123456789 - NOM&lt;/dd&gt;
-                    &lt;dt class=&quot;af-contrat__word&quot;&gt;Portefeuille :&lt;/dt&gt;
-                    &lt;dd class=&quot;af-contrat__def&quot;&gt;000123456789&lt;/dd&gt;
-                    &lt;dt class=&quot;af-contrat__word&quot;&gt;Status :&lt;/dt&gt;
-                    &lt;dd class=&quot;af-contrat__def&quot;&gt;Affaire nouvelle&lt;/dd&gt;
-                &lt;/dl&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;af-info-user&quot;&gt;&lt;a class=&quot;af-info-user__link&quot; href=&quot;/profile&quot; title=&quot;Voir mon profil&quot;&gt;&lt;span class=&quot;af-info-user__name&quot;&gt;Pierre Martin&lt;/span&gt;&lt;span class=&quot;af-info-user__profile&quot;&gt;[Profile]&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;
-        &lt;/header&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;af-nav-container&quot;&gt;
-    &lt;button class=&quot;mask fade show&quot; type=&quot;button&quot;&gt;&lt;/button&gt;
-    &lt;nav class=&quot;af-nav af-drawer left show&quot; role=&quot;navigation&quot; aria-label=&quot;Menu principal&quot;&gt;
-        &lt;div class=&quot;af-container af-nav__wrapper&quot;&gt;
-            &lt;div class=&quot;af-nav__aside-header&quot;&gt;
-                &lt;h4 class=&quot;af-nav__aside-title&quot;&gt;Menu&lt;/h4&gt;&lt;a class=&quot;af-nav__aside-close&quot; href=&quot;#&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-controls=&quot;idmenu&quot; id=&quot;menubutton&quot;&gt;×&lt;/a&gt;
-            &lt;/div&gt;
-            &lt;ul class=&quot;af-nav__list&quot; role=&quot;menubar&quot; aria-labelledby=&quot;menubutton&quot; id=&quot;idmenu&quot;&gt;
-                &lt;li class=&quot;af-nav__item af-nav__item--active&quot; role=&quot;none&quot;&gt;&lt;a class=&quot;af-nav__link&quot; role=&quot;menuitem&quot; href=&quot;/home&quot; tabindex=&quot;0&quot;&gt;Home&lt;/a&gt;
-                &lt;/li&gt;
-                &lt;li class=&quot;af-nav__item&quot; role=&quot;none&quot;&gt;&lt;a class=&quot;af-nav__link&quot; role=&quot;menuitem&quot; href=&quot;/form&quot; tabindex=&quot;-1&quot;&gt;Forms&lt;/a&gt;
-                &lt;/li&gt;
-                &lt;li class=&quot;af-nav__item&quot; role=&quot;none&quot;&gt;&lt;a class=&quot;af-nav__link&quot; role=&quot;menuitem&quot; href=&quot;/fileupload&quot; tabindex=&quot;-1&quot;&gt;Fileupload&lt;/a&gt;
-                &lt;/li&gt;
-                &lt;li class=&quot;af-nav__item&quot; role=&quot;none&quot;&gt;&lt;a class=&quot;af-nav__link&quot; role=&quot;menuitem&quot; href=&quot;/table&quot; tabindex=&quot;-1&quot;&gt;Table&lt;/a&gt;
-                &lt;/li&gt;
-                &lt;li class=&quot;af-nav__item&quot; role=&quot;none&quot;&gt;&lt;a class=&quot;af-nav__link&quot; role=&quot;menuitem&quot; href=&quot;/collapse&quot; tabindex=&quot;-1&quot;&gt;Accordions&lt;/a&gt;
-                &lt;/li&gt;
-                &lt;li class=&quot;af-nav__item&quot; role=&quot;none&quot;&gt;&lt;a class=&quot;af-nav__link&quot; role=&quot;menuitem&quot; href=&quot;/table&quot; tabindex=&quot;-1&quot;&gt; Drag n drop&lt;/a&gt;
-                &lt;/li&gt;
-                &lt;li class=&quot;af-nav__item&quot; role=&quot;none&quot;&gt;&lt;a class=&quot;af-nav__link&quot; role=&quot;menuitem&quot; href=&quot;/alert&quot; tabindex=&quot;-1&quot;&gt;Alerts&lt;/a&gt;
-                &lt;/li&gt;
-                &lt;li class=&quot;af-nav__item&quot; role=&quot;none&quot;&gt;&lt;a class=&quot;af-nav__link&quot; role=&quot;menuitem&quot; href=&quot;/contributing&quot; tabindex=&quot;-1&quot;&gt;Validation&lt;/a&gt;
-                &lt;/li&gt;
-                &lt;li class=&quot;af-nav__item af-nav__item--haschild&quot; role=&quot;none&quot;&gt;&lt;a class=&quot;af-nav__link&quot; role=&quot;menuitem&quot; href=&quot;/doc&quot; tabindex=&quot;-1&quot; aria-haspopup=&quot;aria-haspopup&quot; aria-expanded=&quot;aria-expanded&quot;&gt;Doc&lt;/a&gt;&lt;i class=&quot;glyphicon glyphicon-arrow-xs-down&quot;&gt;&lt;/i&gt;
-                    &lt;ul class=&quot;af-nav__list af-nav__list--children&quot; role=&quot;menu&quot; aria-label=&quot;Doc&quot;&gt;
-                        &lt;li class=&quot;af-nav__item&quot; role=&quot;none&quot;&gt;&lt;a class=&quot;af-nav__link&quot; role=&quot;menuitem&quot; href=&quot;/doc/sous-lien&quot; tabindex=&quot;-1&quot;&gt;Sous lien&lt;/a&gt;&lt;/li&gt;
-                        &lt;li class=&quot;af-nav__item&quot; role=&quot;none&quot;&gt;&lt;a class=&quot;af-nav__link&quot; role=&quot;menuitem&quot; href=&quot;/doc/sous-lien2&quot; tabindex=&quot;-1&quot;&gt;Sous lien 2&lt;/a&gt;&lt;/li&gt;
-                        &lt;li class=&quot;af-nav__item&quot; role=&quot;none&quot;&gt;&lt;a class=&quot;af-nav__link&quot; role=&quot;menuitem&quot; href=&quot;/doc/sous-lien3&quot; tabindex=&quot;-1&quot;&gt;Sous lien 3&lt;/a&gt;&lt;/li&gt;
-                        &lt;li class=&quot;af-nav__item&quot; role=&quot;none&quot;&gt;&lt;a class=&quot;af-nav__link&quot; role=&quot;menuitem&quot; href=&quot;/doc/sous-lien4&quot; tabindex=&quot;-1&quot;&gt;Sous lien 4&lt;/a&gt;&lt;/li&gt;
-                    &lt;/ul&gt;
-                &lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/div&gt;
-    &lt;/nav&gt;
-&lt;/div&gt;
-&lt;div class=&quot;af-title-bar&quot;&gt;
-    &lt;div class=&quot;af-title-bar__wrapper af-container&quot;&gt;
-        &lt;button class=&quot;af-btn-circle af-title-bar__mobile-menu&quot;&gt;
-            &lt;div class=&quot;af-btn__wrapper&quot;&gt;&lt;i class=&quot;af-title-bar__icon glyphicon glyphicon-menu-hamburger&quot;&gt;&lt;/i&gt;&lt;/div&gt;
-        &lt;/button&gt;
-        &lt;h1 class=&quot;af-title-bar__title&quot;&gt;Slash Design System&lt;small class=&quot;af-title-bar__subtitle&quot;&gt;Sous titre&lt;/small&gt;&lt;/h1&gt;
-        &lt;div class=&quot;af-title-bar__actions&quot;&gt;&lt;a class=&quot;af-title-bar__link&quot; href=&quot;#lien&quot; title=&quot;lien titlebar&quot;&gt;lien titlebar&lt;/a&gt;&lt;a class=&quot;af-btn--circle&quot; href=&quot;#enregistrer&quot; title=&quot;Enregistrer&quot; role=&quot;button&quot; tabindex=&quot;0&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-floppy-disk&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a class=&quot;af-btn--circle&quot; href=&quot;#imprimer&quot; title=&quot;Imprimer&quot; role=&quot;button&quot; tabindex=&quot;0&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-print&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;af-container&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col col-md-12&quot;&gt;
-            &lt;div class=&quot;af-steps&quot;&gt;
-                &lt;ol class=&quot;af-steps-list&quot;&gt;
-                    &lt;li class=&quot;af-steps-list-step past&quot; title=&quot;Etape 1&quot;&gt;
-                        &lt;div class=&quot;af-steps-list-stepLabel&quot;&gt;
-                            &lt;div class=&quot;af-steps-list-stepNumber&quot;&gt;1&lt;/div&gt;
-                            &lt;div class=&quot;af-steps-list-stepTitle&quot;&gt;Previous step&lt;/div&gt;
-                        &lt;/div&gt;
-                    &lt;/li&gt;
-                    &lt;li class=&quot;af-steps-list-step past&quot; title=&quot;Etape 2&quot;&gt;
-                        &lt;div class=&quot;af-steps-list-stepLabel&quot;&gt;
-                            &lt;div class=&quot;af-steps-list-stepNumber&quot;&gt;2&lt;/div&gt;
-                            &lt;div class=&quot;af-steps-list-stepTitle&quot;&gt;Previous step&lt;/div&gt;
-                        &lt;/div&gt;
-                    &lt;/li&gt;
-                    &lt;li class=&quot;af-steps-list-step on&quot; title=&quot;Etape 3&quot;&gt;
-                        &lt;div class=&quot;af-steps-list-stepLabel&quot;&gt;
-                            &lt;div class=&quot;af-steps-list-stepNumber&quot;&gt;3&lt;/div&gt;
-                            &lt;div class=&quot;af-steps-list-stepTitle&quot;&gt;Current step&lt;/div&gt;
-                        &lt;/div&gt;
-                    &lt;/li&gt;
-                    &lt;li class=&quot;af-steps-list-step&quot; title=&quot;Etape 3&quot;&gt;
-                        &lt;div class=&quot;af-steps-list-stepLabel&quot;&gt;
-                            &lt;div class=&quot;af-steps-list-stepNumber&quot;&gt;4&lt;/div&gt;
-                            &lt;div class=&quot;af-steps-list-stepTitle&quot;&gt;Next step&lt;/div&gt;
-                        &lt;/div&gt;
-                    &lt;/li&gt;
-                    &lt;li class=&quot;af-steps-list-step&quot; title=&quot;Etape finale&quot;&gt;
-                        &lt;div class=&quot;af-steps-list-stepLabel&quot;&gt;
-                            &lt;div class=&quot;af-steps-list-stepNumber&quot;&gt; &lt;i class=&quot;glyphicon glyphicon-ok&quot;&gt;&lt;/i&gt;&lt;/div&gt;
-                            &lt;div class=&quot;af-steps-list-stepTitle&quot;&gt;Confirmation&lt;/div&gt;
-                        &lt;/div&gt;
-                    &lt;/li&gt;
-                &lt;/ol&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col col-sm-12 col-md-12 col-lg-12 col-xl-12&quot;&gt;
-            &lt;table class=&quot;af-table&quot;&gt;
-                &lt;thead class=&quot;af-table__thead&quot;&gt;
-                    &lt;tr class=&quot;af-table__tr&quot;&gt;
-                        &lt;th class=&quot;af-table__th af-table__th--sortable&quot;&gt;&lt;span class=&quot;af-table__th-content&quot;&gt;
-                                &lt;button class=&quot;af-btn af-btn--table-sorting af-btn--table-sorting--active&quot; role=&quot;button&quot;&gt;N° de contrat&lt;span class=&quot;glyphicon glyphicon-arrow-xs-down&quot;&gt;&lt;/span&gt;
-                                &lt;/button&gt;&lt;/span&gt;&lt;/th&gt;
-                        &lt;th class=&quot;af-table__th af-table__th--sortable&quot;&gt;&lt;span class=&quot;af-table__th-content&quot;&gt;
-                                &lt;button class=&quot;af-btn af-btn--table-sorting&quot; role=&quot;button&quot;&gt;N° de dossier&lt;span class=&quot;glyphicon glyphicon-sorting&quot;&gt;&lt;/span&gt;
-                                &lt;/button&gt;&lt;/span&gt;&lt;/th&gt;
-                        &lt;th class=&quot;af-table__th af-table__th--sortable&quot;&gt;&lt;span class=&quot;af-table__th-content&quot;&gt;
-                                &lt;button class=&quot;af-btn af-btn--table-sorting&quot; role=&quot;button&quot;&gt;N° de demande&lt;span class=&quot;glyphicon glyphicon-sorting&quot;&gt;&lt;/span&gt;
-                                &lt;/button&gt;&lt;/span&gt;&lt;/th&gt;
-                        &lt;th class=&quot;af-table__th af-table__th--sortable&quot;&gt;&lt;span class=&quot;af-table__th-content&quot;&gt;
-                                &lt;button class=&quot;af-btn af-btn--table-sorting&quot; role=&quot;button&quot;&gt;Site&lt;span class=&quot;glyphicon glyphicon-sorting&quot;&gt;&lt;/span&gt;
-                                &lt;/button&gt;&lt;/span&gt;&lt;/th&gt;
-                        &lt;th class=&quot;af-table__th af-table__th--sortable&quot;&gt;&lt;span class=&quot;af-table__th-content&quot;&gt;
-                                &lt;button class=&quot;af-btn af-btn--table-sorting&quot; role=&quot;button&quot;&gt;Date de mise à jour&lt;span class=&quot;glyphicon glyphicon-sorting&quot;&gt;&lt;/span&gt;
-                                &lt;/button&gt;&lt;/span&gt;&lt;/th&gt;
-                        &lt;th class=&quot;af-table__th af-table__th--sortable&quot;&gt;&lt;span class=&quot;af-table__th-content&quot;&gt;
-                                &lt;button class=&quot;af-btn af-btn--table-sorting&quot; role=&quot;button&quot;&gt;Décision&lt;span class=&quot;glyphicon glyphicon-sorting&quot;&gt;&lt;/span&gt;
-                                &lt;/button&gt;&lt;/span&gt;&lt;/th&gt;
-                        &lt;th class=&quot;af-table__th af-table__th--sortable&quot;&gt;&lt;span class=&quot;af-table__th-content&quot;&gt;
-                                &lt;button class=&quot;af-btn af-btn--table-sorting&quot; role=&quot;button&quot;&gt;Statut du dossier&lt;span class=&quot;glyphicon glyphicon-sorting&quot;&gt;&lt;/span&gt;
-                                &lt;/button&gt;&lt;/span&gt;&lt;/th&gt;
-                        &lt;th class=&quot;af-table__th&quot;&gt;&lt;span class=&quot;af-table__th-content&quot;&gt; Action&lt;/span&gt;&lt;/th&gt;
-                    &lt;/tr&gt;
-                &lt;/thead&gt;
-                &lt;tbody class=&quot;af-table__body&quot;&gt;
-                    &lt;tr class=&quot;af-table__tr&quot;&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;25487696&lt;/a&gt;&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;1594458644&lt;/a&gt;&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;7359&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;BellBoeuf&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;01/03/2017&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;Acceptation totale&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;
-                            &lt;div class=&quot;af-status&quot;&gt;&lt;span class=&quot;glyphicon glyphicon--ring glyphicon--banque glyphicon-option-horizontal&quot;&gt;&lt;/span&gt;En cours
-                            &lt;/div&gt;
-                        &lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link af-link--hasIconLeft&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-pencil&quot;&gt;&lt;/span&gt;&lt;span class=&quot;af-link__text&quot;&gt;Consulter&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;tr class=&quot;af-table__tr&quot;&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;25487296&lt;/a&gt;&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;1594458044&lt;/a&gt;&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;7059&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;Toulouse&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;01/06/2007&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;Acceptation partielle&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;
-                            &lt;div class=&quot;af-status&quot;&gt;&lt;span class=&quot;glyphicon glyphicon--ring glyphicon--warning glyphicon-arrowthin-right&quot;&gt;&lt;/span&gt;Transmis
-                            &lt;/div&gt;
-                        &lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link af-link--hasIconLeft&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-pencil&quot;&gt;&lt;/span&gt;&lt;span class=&quot;af-link__text&quot;&gt;Consulter&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;tr class=&quot;af-table__tr&quot;&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;22487296&lt;/a&gt;&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;1594428044&lt;/a&gt;&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;7052&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;NA&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;11/06/2000&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;Refus&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;
-                            &lt;div class=&quot;af-status&quot;&gt;&lt;span class=&quot;glyphicon glyphicon--ring glyphicon--success glyphicon-ok&quot;&gt;&lt;/span&gt;Clos
-                            &lt;/div&gt;
-                        &lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link af-link--hasIconLeft&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-pencil&quot;&gt;&lt;/span&gt;&lt;span class=&quot;af-link__text&quot;&gt;Consulter&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;tr class=&quot;af-table__tr&quot;&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;25487696&lt;/a&gt;&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;1594458644&lt;/a&gt;&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;7359&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;BellBoeuf&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;01/03/2017&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;Acceptation totale&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;
-                            &lt;div class=&quot;af-status&quot;&gt;&lt;span class=&quot;glyphicon glyphicon--ring glyphicon--banque glyphicon-option-horizontal&quot;&gt;&lt;/span&gt;En cours
-                            &lt;/div&gt;
-                        &lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link af-link--hasIconLeft&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-pencil&quot;&gt;&lt;/span&gt;&lt;span class=&quot;af-link__text&quot;&gt;Consulter&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;tr class=&quot;af-table__tr&quot;&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;25487296&lt;/a&gt;&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;1594458044&lt;/a&gt;&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;7059&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;Toulouse&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;01/06/2007&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;Acceptation partielle&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;
-                            &lt;div class=&quot;af-status&quot;&gt;&lt;span class=&quot;glyphicon glyphicon--ring glyphicon--warning glyphicon-arrowthin-right&quot;&gt;&lt;/span&gt;Transmis
-                            &lt;/div&gt;
-                        &lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link af-link--hasIconLeft&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-pencil&quot;&gt;&lt;/span&gt;&lt;span class=&quot;af-link__text&quot;&gt;Consulter&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;tr class=&quot;af-table__tr&quot;&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;22487296&lt;/a&gt;&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;1594428044&lt;/a&gt;&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;7052&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;NA&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;11/06/2000&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;Refus&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;
-                            &lt;div class=&quot;af-status&quot;&gt;&lt;span class=&quot;glyphicon glyphicon--ring glyphicon--success glyphicon-ok&quot;&gt;&lt;/span&gt;Clos
-                            &lt;/div&gt;
-                        &lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link af-link--hasIconLeft&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-pencil&quot;&gt;&lt;/span&gt;&lt;span class=&quot;af-link__text&quot;&gt;Consulter&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;tr class=&quot;af-table__tr&quot;&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;25487696&lt;/a&gt;&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;1594458644&lt;/a&gt;&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;7359&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;BellBoeuf&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;01/03/2017&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;Acceptation totale&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;
-                            &lt;div class=&quot;af-status&quot;&gt;&lt;span class=&quot;glyphicon glyphicon--ring glyphicon--banque glyphicon-option-horizontal&quot;&gt;&lt;/span&gt;En cours
-                            &lt;/div&gt;
-                        &lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link af-link--hasIconLeft&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-pencil&quot;&gt;&lt;/span&gt;&lt;span class=&quot;af-link__text&quot;&gt;Consulter&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;tr class=&quot;af-table__tr&quot;&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;25487296&lt;/a&gt;&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;1594458044&lt;/a&gt;&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;7059&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;Toulouse&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;01/06/2007&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;Acceptation partielle&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;
-                            &lt;div class=&quot;af-status&quot;&gt;&lt;span class=&quot;glyphicon glyphicon--ring glyphicon--warning glyphicon-arrowthin-right&quot;&gt;&lt;/span&gt;Transmis
-                            &lt;/div&gt;
-                        &lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link af-link--hasIconLeft&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-pencil&quot;&gt;&lt;/span&gt;&lt;span class=&quot;af-link__text&quot;&gt;Consulter&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;tr class=&quot;af-table__tr&quot;&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;22487296&lt;/a&gt;&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;1594428044&lt;/a&gt;&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;7052&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;NA&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;11/06/2000&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;Refus&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;
-                            &lt;div class=&quot;af-status&quot;&gt;&lt;span class=&quot;glyphicon glyphicon--ring glyphicon--success glyphicon-ok&quot;&gt;&lt;/span&gt;Clos
-                            &lt;/div&gt;
-                        &lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link af-link--hasIconLeft&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-pencil&quot;&gt;&lt;/span&gt;&lt;span class=&quot;af-link__text&quot;&gt;Consulter&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;tr class=&quot;af-table__tr&quot;&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;25487296&lt;/a&gt;&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link&quot; href=&quot;&quot;&gt;1594458044&lt;/a&gt;&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;7059&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;Toulouse&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;01/06/2007&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;Acceptation partielle&lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;
-                            &lt;div class=&quot;af-status&quot;&gt;&lt;span class=&quot;glyphicon glyphicon--ring glyphicon--warning glyphicon-arrowthin-right&quot;&gt;&lt;/span&gt;Transmis
-                            &lt;/div&gt;
-                        &lt;/td&gt;
-                        &lt;td class=&quot;af-table__cell&quot;&gt;&lt;a class=&quot;af-link af-link--hasIconLeft&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-pencil&quot;&gt;&lt;/span&gt;&lt;span class=&quot;af-link__text&quot;&gt;Consulter&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
-                    &lt;/tr&gt;
-                &lt;/tbody&gt;
-            &lt;/table&gt;
-            &lt;div class=&quot;af-paging&quot;&gt;
-                &lt;div class=&quot;af-paging__limit&quot;&gt;
-                    &lt;form class=&quot;af-paging__form&quot;&gt;
-                        &lt;div class=&quot;af-form__group&quot;&gt;
-                            &lt;div class=&quot;col col-sm-2 col-md-2 col-lg-2 col-xl-2&quot;&gt;
-                                &lt;label class=&quot;af-form__group-label&quot; for=&quot;pagination&quot;&gt;Afficher&lt;/label&gt;
-                            &lt;/div&gt;
-                            &lt;div class=&quot;col col-sm-10 col-md-10 col-lg-10 col-xl-10&quot;&gt;
-                                &lt;div class=&quot;af-form__select&quot;&gt;
-                                    &lt;div class=&quot;af-form__select-container&quot;&gt;
-                                        &lt;select class=&quot;af-form__input-select&quot;&gt;
-                                            &lt;option value=&quot;5&quot;&gt;5&lt;/option&gt;
-                                            &lt;option value=&quot;10&quot;&gt;10&lt;/option&gt;
-                                            &lt;option value=&quot;15&quot;&gt;15&lt;/option&gt;
-                                            &lt;option value=&quot;20&quot;&gt;20&lt;/option&gt;
-                                        &lt;/select&gt;&lt;span class=&quot;glyphicon glyphicon-menu-down&quot;&gt;&lt;/span&gt;
-                                    &lt;/div&gt;&lt;span class=&quot;af-form__input-cmplt&quot;&gt;éléments&lt;/span&gt;
-                                &lt;/div&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;
-                    &lt;/form&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;af-paging__pager&quot;&gt;
-                    &lt;nav class=&quot;af-pager&quot;&gt;
-                        &lt;ul class=&quot;af-pager__pagination&quot;&gt;
-                            &lt;li class=&quot;af-pager__item&quot;&gt;&lt;a class=&quot;af-pager__item-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;af-pager__item-icon&quot;&gt;&amp;laquo;&lt;/span&gt;&lt;span class=&quot;af-pager__item-text&quot;&gt;Pr&amp;eacute;c&amp;eacute;dent&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                            &lt;li class=&quot;af-pager__item&quot;&gt;&lt;a class=&quot;af-pager__item-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
-                            &lt;li class=&quot;af-pager__item af-pager__item--disabled&quot;&gt;&lt;span class=&quot;af-pager__item-link&quot;&gt;...&lt;/span&gt;&lt;/li&gt;
-                            &lt;li class=&quot;af-pager__item&quot;&gt;&lt;a class=&quot;af-pager__item-link&quot; href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
-                            &lt;li class=&quot;af-pager__item af-pager__item--active&quot;&gt;&lt;a class=&quot;af-pager__item-link&quot; href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
-                            &lt;li class=&quot;af-pager__item&quot;&gt;&lt;a class=&quot;af-pager__item-link&quot; href=&quot;#&quot;&gt;6&lt;/a&gt;&lt;/li&gt;
-                            &lt;li class=&quot;af-pager__item af-pager__item--disabled&quot;&gt;...&lt;/li&gt;
-                            &lt;li class=&quot;af-pager__item&quot;&gt;&lt;a class=&quot;af-pager__item-link&quot; href=&quot;#&quot;&gt;23&lt;/a&gt;&lt;/li&gt;
-                            &lt;li class=&quot;af-pager__item&quot;&gt;&lt;a class=&quot;af-pager__item-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;af-pager__item-text&quot;&gt;Suivant&lt;/span&gt;&lt;span class=&quot;af-pager__item-icon&quot;&gt;&amp;raquo;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                        &lt;/ul&gt;
-                    &lt;/nav&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;footer class=&quot;af-footer&quot;&gt;
-    &lt;div class=&quot;af-container&quot;&gt;&lt;a class=&quot;af-logo&quot; href=&quot;https://www.axa.fr/&quot; title=&quot;Site Axa France&quot; target=&quot;blank&quot;&gt;&lt;img class=&quot;af-logo__brand&quot; src=&quot;../../assets/images/slash-logo.svg&quot; alt=&quot;Logo Slash Design System&quot; /&gt;&lt;/a&gt;
-        &lt;div class=&quot;af-footer-content&quot;&gt;@ 2020 AXA Tous droits réservés&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/footer&gt;</code></pre></div></div></div></section><section class="tk-tabs__content-item js-tabs__content-item" data-id="tabs__content-item--12" role="tabpanel"><div class="tk-code__wrapper-outer"><div class="tk-code__wrapper-middle"><div class="tk-code__wrapper-inner"><div class="tk-code__icon"><svg class="tk-icon  tk-icon--copy " viewbox="0 0 36 36" width="36" height="36"><use xlink:href="#copy"></use></svg><span class="tk-code__icon-text">Copied</span></div><pre class="pre"><code class="css">No style</code></pre></div></div></div></section><section class="tk-tabs__content-item js-tabs__content-item" data-id="tabs__content-item--13" role="tabpanel"><iframe class="tk-demo__iframe" src="https://axaguildev.github.io/react-toolkit/latest/storybook/iframe.html?id=form-demo-statefull--form-with-recompose"></iframe></section></article></div></article></section><section id="pagestyle"><h1 class="tk-title  tk-title--page">Style</h1><div class="tk-colors"><h2 class="tk-colors__title">Colors</h2><div class="tk-colors__list"><div class="tk-color"><div class="tk-color__pantone" style="background-color:#00008f"></div><span class="tk-color__name">BLEU AXA</span><span class="tk-color__hex">#00008f</span><span class="tk-color__sass">$color-axa</span></div><div class="tk-color"><div class="tk-color__pantone" style="background-color:#3032c1"></div><span class="tk-color__name">BLEU Action</span><span class="tk-color__hex">#3032c1</span><span class="tk-color__sass">$color-azur</span></div><div class="tk-color"><div class="tk-color__pantone" style="background-color:#aaabf9"></div><span class="tk-color__name">BLEU Action focus</span><span class="tk-color__hex">#aaabf9</span><span class="tk-color__sass">$color-azur-focused</span></div><div class="tk-color"><div class="tk-color__pantone" style="background-color:#e5e5e5"></div><span class="tk-color__name">Mercury</span><span class="tk-color__hex">#e5e5e5</span><span class="tk-color__sass">$color-mercury</span></div><div class="tk-color"><div class="tk-color__pantone" style="background-color:#cccccc"></div><span class="tk-color__name">Silver</span><span class="tk-color__hex">#cccccc</span><span class="tk-color__sass"> $color-silver</span></div></div></div><article class="tk-markdown"><h2>Imports SASS</h2>
+</article></section><section id="pagestyle"><h1 class="tk-title  tk-title--page">Style</h1><div class="tk-colors"><h2 class="tk-colors__title">Colors</h2><div class="tk-colors__list"><div class="tk-color"><div class="tk-color__pantone" style="background-color:#00008f"></div><span class="tk-color__name">BLEU AXA</span><span class="tk-color__hex">#00008f</span><span class="tk-color__sass">$color-axa</span></div><div class="tk-color"><div class="tk-color__pantone" style="background-color:#3032c1"></div><span class="tk-color__name">BLEU Action</span><span class="tk-color__hex">#3032c1</span><span class="tk-color__sass">$color-azur</span></div><div class="tk-color"><div class="tk-color__pantone" style="background-color:#aaabf9"></div><span class="tk-color__name">BLEU Action focus</span><span class="tk-color__hex">#aaabf9</span><span class="tk-color__sass">$color-azur-focused</span></div><div class="tk-color"><div class="tk-color__pantone" style="background-color:#e5e5e5"></div><span class="tk-color__name">Mercury</span><span class="tk-color__hex">#e5e5e5</span><span class="tk-color__sass">$color-mercury</span></div><div class="tk-color"><div class="tk-color__pantone" style="background-color:#cccccc"></div><span class="tk-color__name">Silver</span><span class="tk-color__hex">#cccccc</span><span class="tk-color__sass"> $color-silver</span></div></div></div><article class="tk-markdown"><h2>Imports SASS</h2>
 <pre><code>@import '@axa-fr/react-toolkit-core/src/common/scss/core.scss';
 @import '~@axa-fr/react-toolkit-all/dist/style/bootstrap/grid.css';
 
