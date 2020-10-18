@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /react-toolkit/latest/design/
