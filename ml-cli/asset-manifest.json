@@ -3,7 +3,7 @@
     "0.13c54676.iframe.bundle.js": "./0.13c54676.iframe.bundle.js",
     "1.060378f7.iframe.bundle.js": "./1.060378f7.iframe.bundle.js",
     "main.css": "./static/css/main.2223adcd.chunk.css",
-    "main.js": "./main.07dfcfa2.iframe.bundle.js",
+    "main.js": "./main.3712ff27.iframe.bundle.js",
     "main.css.map": "./static/css/main.2223adcd.chunk.css.map",
     "runtime~main.js": "./runtime~main.6503c6c7.iframe.bundle.js",
     "vendors~main.css": "./static/css/vendors~main.b4d2499d.chunk.css",
@@ -20,7 +20,7 @@
     "5.cf9a7553.iframe.bundle.js.LICENSE.txt": "./5.cf9a7553.iframe.bundle.js.LICENSE.txt",
     "7.5256cab3.iframe.bundle.js.LICENSE.txt": "./7.5256cab3.iframe.bundle.js.LICENSE.txt",
     "iframe.html": "./iframe.html",
-    "precache-manifest.0b691a1f1e82ae7204a14c0f1a8b8ac7.js": "./precache-manifest.0b691a1f1e82ae7204a14c0f1a8b8ac7.js",
+    "precache-manifest.2d0f445cfc694fb7f55659237cee84ac.js": "./precache-manifest.2d0f445cfc694fb7f55659237cee84ac.js",
     "service-worker.js": "./service-worker.js",
     "static/media/af-icons.css": "./static/media/icons.d5d13643.ttf",
     "static/media/logo-axa.svg": "./static/media/logo-axa.d4ae4eac.svg",
@@ -32,6 +32,6 @@
     "static/css/vendors~main.b4d2499d.chunk.css",
     "vendors~main.33aaaae8.iframe.bundle.js",
     "static/css/main.2223adcd.chunk.css",
-    "main.07dfcfa2.iframe.bundle.js"
+    "main.3712ff27.iframe.bundle.js"
   ]
 }
