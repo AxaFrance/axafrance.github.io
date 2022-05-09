@@ -1,20 +1,15 @@
-{
+﻿{
   "apiUrl": "https://localhost:5001/api/server/{path}",
   "baseUrl": "",
   "oidc": {
     "configuration": {
-      "client_id": "interactive.public.short",
+      "client_id": "w42bdpmo",
       "redirect_uri": "https://localhost:5001/authentication/callback",
       "post_logout_redirect_uri": "https://localhost:5001/authentication/logout",
-      "scope": "openid profile email api offline_access",
-      "authority": "https://demo.identityserver.io",
+      "scope": "openid profile email urn:axa:france:etg urn:axa:france:wac urn:axa:france:entity offline_access",
+      "authority": "https://maam-dev.axa.com/maam/v2",
       "service_worker_relative_url":"/OidcServiceWorker.js",
       "service_worker_only": true
     }
-  },
-  "telemetry": {
-    "instrumentationKey": "",
-    "logLevel": "DEBUG",
-    "active": false
   }
 }
