@@ -1,11 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="favicon-32x32.png" />
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon-32x32.png"/>
     <title>AXA@TechInnov 2023</title>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        .flyer_recto {
+            /* The image used */
+            background-image: url("flyer_recto.png");
+        }
+        .flyer_verso {
+            /* The image used */
+            background-image: url("flyer_verso.png");
+        }
+        .flyer {
+            /* Full height */
+            height: 100%;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .btn {
+            background-color: #00008f;
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        /* Darker background on mouse-over */
+        .btn:hover {
+            background-color: RoyalBlue;
+        }
+    </style>
 </head>
 <body>
-  <iframe src="axa_at_techInnov_2023.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" width="100%" height="2100px">
+
+<div class="flyer flyer_recto"></div>
+<div class="flyer flyer_verso"></div>
+
+<button class="btn" style="width:100%"><i class="fa fa-download"></i>
+    <a href="axa_at_techInnov_2023.pdf" download="axa_at_techInnov_2023.pdf" style="all: unset;">Télécharger le flyer</a>
+</button>
+
 </body>
 </html>
